@@ -1,5 +1,7 @@
 # Parsing HTML with Nokogiri
 
+How can we use Ruby to interact with, filter, or traverse HTML? Let's play around with [Nokogiri](http://nokogiri.org). 
+
 `gem install nokogiri`
 
 ### Playground #1 in Pry:
