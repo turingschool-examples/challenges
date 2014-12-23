@@ -1,8 +1,10 @@
 # Parsing HTML with Nokogiri
 
+How can we use Ruby to interact with, filter, or traverse HTML? Let's play around with [Nokogiri](http://nokogiri.org). 
+
 `gem install nokogiri`
 
-### Playground #1:
+### Playground #1 in Pry:
 
 ```
 require 'nokogiri'
@@ -14,7 +16,7 @@ doc  = Nokogiri::HTML(html)
 
 What is `doc`? What does it represent? What information does it include?
 
-### Playground #2:
+### Playground #2 in Pry:
 
 ```
 require 'nokogiri'
@@ -26,9 +28,15 @@ doc  = Nokogiri::HTML(html)
 images = doc.css('img')
 ```
 
-What is `images`? How many are there? What information are you given by Nokogiri about these images?
+What does the `images` variable represent? How many images are there? What information are you given by Nokogiri about these images? Can you write a loop that gathers the `src` of each image? Use the example below for reference:
 
-### Playground #3:
+```
+page.css('a').map do |a|
+  a['href']
+end
+```
+
+### Playground #3 in Pry:
 
 ```
 require 'nokogiri'
@@ -43,7 +51,7 @@ divs  = doc.css('div')
 
 What is the difference between `.at_css` and `.css`? 
 
-### Playground #4:
+### Playground #4 in Pry:
 
 ```
 require 'nokogiri'
@@ -59,7 +67,6 @@ var3 = doc.css('.mod-intro p').text
 
 What is the difference between `var1`, `var2`, and `var3`? What do '.mod-intro' and 
 '.mod-intro p' refer to? 
-
 
 ### Optional
 

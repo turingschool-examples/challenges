@@ -23,6 +23,8 @@ The formula verifies a number against its included check digit, which is usually
 
 #### Calculating the Check Digit
 
+**You don't need to calculate the check digit for this assignment, but the explanation may help you understand the algorithm.**
+
 Take an account identifier `7992739871`. To make it an account number, we need to calculate and append a check digit. Calling the digit `x`, the full account number will look like `7992739871x`.
 
 We use the algorithm to calculate the correct checksum digit:
