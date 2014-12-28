@@ -57,7 +57,7 @@ And the `puts` line at the end would output the following:
 
 <p>
   "You just <em>have</em> to try the cheesecake," he said. "Ever since it appeared in
-  <strong>Food & Wine</strong> this place has been packed every night."
+  <strong>Food &amp; Wine</strong> this place has been packed every night."
 </p>
 ```
 
@@ -134,7 +134,7 @@ Which should output:
 
 Then build support for **ordered lists** which use numbers for the markers.
 Though, confusingly, the numbers themselves don't matter. Some authors use `1.`
-to mark each list element and let HTML figure things out:
+to mark every list element and let HTML figure things out:
 
 ```markdown
 My favorite cuisines are:
