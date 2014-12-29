@@ -134,7 +134,7 @@ Which should output:
 
 Then build support for **ordered lists** which use numbers for the markers.
 Though, confusingly, the numbers themselves don't matter. Some authors use `1.`
-to mark every list element and let HTML figure things out:
+to mark every list element and let the HTML renderer (aka browser) figure things out:
 
 ```markdown
 My favorite cuisines are:
@@ -148,7 +148,7 @@ Which is turned into:
 
 ```html
 <p>
-My favorite cuisines are:
+  My favorite cuisines are:
 </p>
 
 <ol>
