@@ -26,7 +26,7 @@ write a *markdown parser*.
 There are markdown parsers available for just about every language you can
 imagine. In the Ruby world some of the best known are Redcarpet, Rdiscount, and
 RedCloth. For any production system, unless you really take Chisel to the next
-level, you're [strongly encouraged to use RedCloth](https://github.com/vmg/redcarpet).
+level, you're [strongly encouraged to use RedCarpet](https://github.com/vmg/redcarpet).
 
 But let's figure out how a parser is built.
 
