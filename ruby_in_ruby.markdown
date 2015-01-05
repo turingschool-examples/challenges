@@ -61,3 +61,85 @@ an_array.count         # => 3
 other_array = SimpleArray.new
 other_array.count      # => 0
 ```
+
+## Part 2: Manipulating Strings
+
+For these array exercises, start with the following template:
+
+```ruby
+class SimpleString
+  attr_reader :data
+
+  def initialize(the_data)
+    @data = the_data
+  end
+end
+```
+
+Which can be used like...
+
+```ruby
+an_array = SimpleString.new("hello")
+an_array.some_method
+```
+
+Presuming that you've added a method like `some_method` per the descriptions
+below. Remember that strings are basically arrays of characters.
+
+### `length`
+
+How many characters are in your `SimpleString`?
+
+```ruby
+a_string = SimpleString.new("hello")
+a_string.upcase          # => 5
+second_string = SimpleString.new("")
+second_string.upcase     # => 0
+```
+
+Don't use the `length` built into `String`.
+
+### `end_with?`
+
+You might not be familiar with the `end_with?` method. It works like this:
+
+```ruby
+a_string = SimpleString.new("hello")
+a_string.end_with?("o")        # => true
+a_string.end_with?("x")        # => false
+a_string.end_with?("ello")     # => true
+```
+
+Don't use the methods `end_with?` or `start_with?` built-in to `String` to create
+your implementation. 
+
+But, as an extra exercise, think about a solution that does rely on the `start_with?`
+in `String`.
+
+### `upcase`
+
+Implement an `upcase` method that capitalizes all the letters in the `SimpleString`:
+
+```ruby
+a_string = SimpleString.new("hello")
+a_string.upcase         # => "HELLO"
+second_string = SimpleString.new("BYE")
+second_string.upcase    # => "BYE"
+third_string = SimpleString.new("")
+third_string.upcase     # => ""
+```
+
+There are at least two approaches: one using a hash to map characters and the second
+that involves math. Neither need's the `upcase` from `String`.
+
+### `+`
+
+Reimplement `+`? Seriously?
+
+```ruby
+a_string = SimpleString.new("hello")
+second_string = SimpleString.new("BYE")
+a_string + second_string    # => "helloBYE"
+```
+
+Don't use `+`, `<<`, or `concat` from `String`.
