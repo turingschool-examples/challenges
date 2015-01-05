@@ -61,15 +61,19 @@ $ rails console
 
 * We're not concerned with displaying achievements separately for right now, so skip over generating a controller and views for achievements.
 * Instead, let's set up relationships
-* In the `student.rb` model, add this line:
+* Modify `student.rb` to look like this:
 
 ```ruby
-has_many :achievements
+class Student < ActiveRecord::Base
+  has_many :achievements
+end
 ```
 * in the `achievement.rb` model, add this line:
 
 ```ruby
-belongs_to :student
+class Achievement < ActiveRecord::Base
+  belongs_to :student
+end
 ```
 
-* Modify your `show` student view to also display their achievements. When you type `student.achievements`, you'll get back an array of the achievements that are associated with that student. Iterate through these to display the description and date the achievement was awarded. 
+* Now, modify your `show.html.erb` student view to also display their achievements. When you type `student.achievements`, you'll get back an array of the achievements that are associated with that student. In the view, iterate through these to display the description and date the achievement was awarded. 
