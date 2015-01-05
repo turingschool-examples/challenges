@@ -1,6 +1,6 @@
 # MCV in Rails and RESTful Routes
 
-Build a small application to display students and their achievements in a database using MVC architecture and RESTful routes.
+Build a small application to display students and their achievements using MVC architecture, RESTful routes, and relationships.
 
 ### Setup
 
