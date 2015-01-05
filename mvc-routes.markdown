@@ -1,6 +1,6 @@
 # MCV in Rails and RESTful Routes
 
-Build a small application to display students in a database using MVC architecture and RESTful routes.
+Build a small application to display students and their achievements in a database using MVC architecture and RESTful routes.
 
 ### Setup
 
@@ -21,7 +21,7 @@ $ rails console
 
 ```
 
-### On your own
+### Displaying Students
 
 * generate a students controller
 * add `get '/students', to: 'students#index` in the `config/routes.rb` to create your route that will show all students
@@ -34,3 +34,42 @@ $ rails console
 * start your Rails server by typing `rails s` in the command line
 * navigate to localhost:3000/students and verify that all sample students are shown
 * navigate to localhost:3000/students/1 and verify that the first sample student is shown
+
+### Setting Up Relationships
+
+Tomorrow we'll be discussing database relationships. In order to prepare, let's add another table to our database: Achievements.
+
+A student can have many achievements, and an achievement belongs to a student. Because of this, we'll store the foreign key on the achievements table.
+
+* `rails generate model achievement description:string awarded_on:date student_id:integer`
+* `rake db:migrate`
+* go into the rails console to generate a few achievements:
+
+```
+$ rails console
+2.1.1 :001 > Achievement.create(description: "Mastered MVC in Rails", awarded_on: Date.today, student_id: 1)
+# You should see '(0.1ms)  begin transaction'... 
+2.1.1 :002 > Achievement.create(description: "Mastered RESTful routing in Rails", awarded_on: Date.today, student_id: 1)
+# You should see '(0.1ms)  begin transaction'... 
+2.1.1 :003 > Achievement.create(description: "Successfully set up relationships between two tables in Rails", awarded_on: Date.today, student_id: 2)
+# You should see '(0.1ms)  begin transaction'... 
+2.1.1 :004 > Achievement.create(description: "Generated models and controllers from the command line", awarded_on: Date.today, student_id: 2)
+# You should see '(0.1ms)  begin transaction'... 
+2.1.1 :003 > exit
+```
+
+
+* We're not concerned with displaying achievements separately for right now, so skip over generating a controller and views for achievements.
+* Instead, let's set up relationships
+* In the `student.rb` model, add this line:
+
+```ruby
+has_many :achievements
+```
+* in the `achievement.rb` model, add this line:
+
+```ruby
+belongs_to :student
+```
+
+* Modify your `show` student view to also display their achievements. When you type `student.achievements`, you'll get back an array of the achievements that are associated with that student. Iterate through these to display the description and date the achievement was awarded. 
