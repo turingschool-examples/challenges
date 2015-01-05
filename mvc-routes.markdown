@@ -77,3 +77,8 @@ end
 ```
 
 * Now, modify your `show.html.erb` student view to also display their achievements. When you type `student.achievements`, you'll get back an array of the achievements that are associated with that student. In the view, iterate through these to display the description and date the achievement was awarded. 
+
+
+### Optional Extension
+
+Can you generate an achievements controller and corresponding views so that we can enter achievements through the web interface? Refer back to Blogger for help creating a form in Rails. 
