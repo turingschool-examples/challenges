@@ -7,7 +7,7 @@ In this series of challenges, let's try to re-implement some common methods.
 
 ## Part 1: Array Basics
 
-For these Array exercises, start with the following template:
+For these array exercises, start with the following template:
 
 ```ruby
 class SimpleArray
@@ -43,7 +43,7 @@ an_array.last          # => "c"
 ### `join`
 
 Can you implement a method that mimics `join` without using the `join` offered
-by Array? Your interaction might look like:
+by `Array`? Your interaction might look like:
 
 ```ruby
 an_array = SimpleArray.new(['a', 'b', 'c'])
