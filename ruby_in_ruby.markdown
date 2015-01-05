@@ -64,7 +64,7 @@ other_array.count      # => 0
 
 ## Part 2: Manipulating Strings
 
-For these array exercises, start with the following template:
+For these string exercises, start with the following template:
 
 ```ruby
 class SimpleString
@@ -111,7 +111,7 @@ a_string.end_with?("ello")     # => true
 ```
 
 Don't use the methods `end_with?` or `start_with?` built-in to `String` to create
-your implementation. 
+your implementation.
 
 But, as an extra exercise, think about a solution that does rely on the `start_with?`
 in `String`.
