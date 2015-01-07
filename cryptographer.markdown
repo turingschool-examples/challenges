@@ -4,6 +4,10 @@
 
 Write a program which can encrypt messages. Write a second program which can decrypt those messages.
 
+## Restrictions
+
+Don't use Ruby's `tr` method.
+
 ## Algorithm
 
 The simplest two-way encryption algorithm is called [ROT-13](http://en.wikipedia.org/wiki/ROT13). It's a good choice to
