@@ -92,9 +92,9 @@ How many characters are in your `SimpleString`?
 
 ```ruby
 a_string = SimpleString.new("hello")
-a_string.upcase          # => 5
+a_string.length          # => 5
 second_string = SimpleString.new("")
-second_string.upcase     # => 0
+second_string.length     # => 0
 ```
 
 Don't use the `length` built into `String`.
