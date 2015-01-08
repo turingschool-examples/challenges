@@ -57,7 +57,7 @@ in the terminal:
 ```ruby
 require_relative 'solver'
 
-filename = ARGV[1]
+filename = ARGV[0]
 puzzle = File.read(filename, 'r')
 solver = Solver.new
 solution = solver.solve(puzzle)
