@@ -25,6 +25,8 @@ This afternoon, use these new skills to add the following features to your IdeaB
 * an image can have many ideas and an idea can have many images
 * images can only be created by an admin user
 
+The most simplistic way to implement images is to store a url to an online image. If you're feeling fancy and want to upload your own images, check out [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) or [Paperclip](https://github.com/thoughtbot/paperclip). 
+
 ### Code Review
 
 At 3:30, switch pairs. Spend 15 minutes reviewing each code base. 
@@ -40,6 +42,6 @@ At 3:30, switch pairs. Spend 15 minutes reviewing each code base.
 
 ### Homework
 
-Fork the repository so that you and your original pair each have a copy. Finish implementing the category and image features individually using TDD. Add the link to your personal repository to [this document](https://github.com/turingschool/ruby-submissions/blob/master/1410/06_mini_project/06_mini_project.yml). 
+Fork or clone the repository so that you and your original pair each have a separate copy. Finish implementing the category and image features individually using TDD. Add the link to your personal repository to [this document](https://github.com/turingschool/ruby-submissions/blob/master/1410/06_mini_project/06_mini_project.yml). 
 
 (Hackathon)[http://www.meetup.com/Turing-Community-Events/events/219789015/] participants: Since you'll be Rails-ing all weekend, you're excused from the assignment.
