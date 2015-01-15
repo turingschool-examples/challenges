@@ -2,7 +2,7 @@
 
 ### Overview
 
-This week, we talked about the following topics:
+This week, we talked about
 
 * database schema design
 * authentication
