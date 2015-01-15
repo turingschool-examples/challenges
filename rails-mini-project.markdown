@@ -44,4 +44,4 @@ At 3:30, switch pairs. Spend 15 minutes reviewing each code base.
 
 Fork or clone the repository so that you and your original pair each have a separate copy. Finish implementing the category and image features individually using TDD. Add the link to your personal repository to [this document](https://github.com/turingschool/ruby-submissions/blob/master/1410/06_mini_project/06_mini_project.yml). 
 
-(Hackathon)[http://www.meetup.com/Turing-Community-Events/events/219789015/] participants: Since you'll be Rails-ing all weekend, you're excused from the assignment.
+[Hackathon](http://www.meetup.com/Turing-Community-Events/events/219789015/) participants: Since you'll be Rails-ing all weekend, you're excused from the assignment.
