@@ -14,4 +14,5 @@
 1. Make a private method so we don't need to access `@customers` directly.
 2. Refactor the `#random` method so it's more clear.
 3. `#find_by_last_name` and `#find_all_by_first_name` are ugly. Make them pretty.
-4. This class is doing too much. Split it in two.
+4. `#create_customers` is doing too much. Split in two methods.
+5. This class is doing too much. Split it in two. What code smell do you notice to determine what should be moved?
