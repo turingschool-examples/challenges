@@ -31,7 +31,7 @@ images = doc.css('img')
 What does the `images` variable represent? How many images are there? What information are you given by Nokogiri about these images? Can you write a loop that gathers the `src` of each image? Use the example below for reference:
 
 ```
-page.css('a').map do |a|
+doc.css('a').map do |a|
   a['href']
 end
 ```
