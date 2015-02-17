@@ -50,7 +50,7 @@ What about this?
 >> status.tasks << task
 ```
 
-* What's the difference between `User.new(name: "Bob")` and `User.create(name: "Bob")`? Play around with Tux and your development environment (use shotgun to see your web interface) to investigate the difference. How does the `save` method play into the relationship between `new` and `create`? You may also want to do some Googling. 
+* What's the difference between `User.new(name: "Bob")` and `User.create(name: "Bob")`? Play around with Tux and your development environment (use shotgun to see your web interface) to investigate the difference. How does the `save` method play into the relationship between `new` and `create`? What about the `new_record?` method? You may also want to do some Googling. 
 
 * What kind of object does `Task.all` return? 
 * How can you get a count of all of the Users? 
