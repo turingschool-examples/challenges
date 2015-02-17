@@ -58,6 +58,10 @@ What about this?
 * Can you select all tasks where the user_id is 2? Try `Task.where(...`
 * What's the difference between the query above and `Task.find_by(user_id: 2)`?
 * Can you select the status with a specific id? Try `Status.find(...`
+* What does `Task.find_or_create_by(title: "Learn ActiveRecord")` do? What about `Task.find_or_create_by(title: "Learn Sequel")`?
+* Try calling `.to_sql` on the end of any query (like `Task.find_by(title: "Play tennis").to_sql`). What happens?
+* What does `User.pluck(:name)` do? Can you generate a query to return only the task titles? 
+* Go through the [ActiveRecord docs](http://guides.rubyonrails.org/active_record_querying.html) and find three other methods to try out. 
 
 #### Extension
 
