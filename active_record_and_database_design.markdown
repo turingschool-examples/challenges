@@ -65,7 +65,9 @@ What about this?
 
 #### Extension
 
-Create a `/statuses` route in your controller that renders a view with clickable links for each status. The link should go to a `/statuses/:id` route that renders a view with all tasks associated with that status. 
+* Create a `/statuses` route in your controller that renders a view with clickable links for each status. The link should go to a `/statuses/:id` route that renders a view with all tasks associated with that status. 
+
+* Change out the sqlite database for a postgres database. 
 
 ### Outside Resources
 
