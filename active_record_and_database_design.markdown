@@ -56,3 +56,7 @@ What about this?
 * Can you select all tasks where the user_id is 2? Try `Task.where(...`
 * What's the difference between the query above and `Task.find_by(user_id: 2)?
 * Can you select the status with a specific id? Try `Status.find(...`
+
+#### Extension
+
+Create a `/statuses` route in your controller that renders a view with clickable links for each status. The link should go to a `/statuses/:id` route that renders a view with all tasks associated with that status. 
