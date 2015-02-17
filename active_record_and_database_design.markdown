@@ -2,7 +2,9 @@
 
 ### 1) Traffic Spy Schema (~45 minutes)
 
-With your [Traffic Spy](http://tutorials.jumpstartlab.com/projects/traffic_spy.html) team, design a database schema using [this online tool](http://ondras.zarovi.cz/sql/demo/). Be sure to normalize the database and include foreign keys to show relationships between tables. 
+Carefully read through the [Traffic Spy](http://tutorials.jumpstartlab.com/projects/traffic_spy.html) specifications. Play around with cURL.
+
+With your Traffic Spy team, design a database schema using [this online tool](http://ondras.zarovi.cz/sql/demo/). Be sure to normalize the database and include foreign keys to show relationships between tables. 
 
 ### 2) TaskManager and ActiveRecord (~1-2 hours)
 
