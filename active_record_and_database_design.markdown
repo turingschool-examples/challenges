@@ -6,9 +6,11 @@ With your [Traffic Spy](http://tutorials.jumpstartlab.com/projects/traffic_spy.h
 
 ### 2) TaskManager and ActiveRecord (~1-2 hours)
 
-1) Add a new table to task manager for statuses. The only attribute of a status is a `name`. A task belongs to a status and a status can have many tasks. Don't forget to add a foreign key of status_id to the task table. 
+1) Using a migration, add a new table to task manager for statuses. The only attribute of a status is a `name`. A task belongs to a status and a status can have many tasks. Don't forget to add a foreign key of status_id to the task table. 
 
-2) From the command line, start Tux:
+2) Run your migration. Check to see that `schema.rb` was updated properly. 
+
+3) From the command line, start Tux:
 
 ```
 $ tux
