@@ -1,10 +1,10 @@
 # ActiveRecord and Database Design
 
-### Traffic Spy Schema
+### 1) Traffic Spy Schema (~45 minutes)
 
 With your [Traffic Spy](http://tutorials.jumpstartlab.com/projects/traffic_spy.html) team, design a database schema using [this online tool](http://ondras.zarovi.cz/sql/demo/). Be sure to normalize the database and include foreign keys to show relationships between tables. 
 
-### TaskManager and ActiveRecord
+### 2) TaskManager and ActiveRecord (~1-2 hours)
 
 1) Add a new table to task manager for statuses. The only attribute of a status is a `name`. A task belongs to a status and a status can have many tasks. Don't forget to add a foreign key of status_id to the task table. 
 
