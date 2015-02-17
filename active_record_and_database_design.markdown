@@ -56,7 +56,7 @@ What about this?
 * How can you get a count of all of the Users? 
 * How do you grab the first Task? What about the last? 
 * Can you select all tasks where the user_id is 2? Try `Task.where(...`
-* What's the difference between the query above and `Task.find_by(user_id: 2)?
+* What's the difference between the query above and `Task.find_by(user_id: 2)`?
 * Can you select the status with a specific id? Try `Status.find(...`
 
 #### Extension
