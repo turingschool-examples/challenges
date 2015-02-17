@@ -31,7 +31,7 @@ Tux gives you an interactive console for your app. Go ahead and add some data to
 >> Task.create(title: "Hire detective", description: "insert clever description here", user_id: 3, status_id: 3)
 ```
 
-#### Experimenting with Built-in ActiveRecord Methods**
+#### Experimenting with Built-in ActiveRecord Methods
 
 What does this do? What table is affected? 
 
