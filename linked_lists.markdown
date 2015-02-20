@@ -8,9 +8,13 @@ The __list__ itself can hold a reference to one thing -- the head node.
 
 Each node can hold a single element of data and a link to the next node in the list.
 
+The last node of the list is often called its __tail__.
+
 Using sweet ASCII art, it might look like this:
 
-HEAD ---> ["hello" | -]--> ["world" | -]--> ["!" | ]
+```
+List -- (head) --> ["hello" | -]-- (link) --> ["world" | -]-- (link) --> ["!" | ]
+```
 The three nodes here hold the data "hello", "world", and "!". The first two node have links which point to other nodes. The last node, holding the data "!", has no reference in the link spot. This signifies that it is the end of the list.
 
 ## Challenge
@@ -58,6 +62,8 @@ end
 * There are two main ways to implement Linked Lists: __iteration__ and __recursion__. Iterative solutions use looping structures (`while`, `for`) to walk through the nodes in the list. Recursive solutions use methods which call themselves to walk through nodes. It would be ideal to solve it each way.
 * Most of your methods will be defined on the `List` itself, but you will need to manipulate one or more `Node`s to implement them. 
 * __TDD__ will be your friend in implementing the list. Remember to start small, work iteratively, and test all of your methods.
+* An __empty__ list has `nil` as its head
+* The __tail__ of a list is the node that has `nil` as its next node
 
 ## Constraints
 
