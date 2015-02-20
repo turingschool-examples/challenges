@@ -29,7 +29,7 @@ Write an implementation of a linked list which can __at least__ do all of the fo
 
 It would be great if your list could _also_ do some of these things:
 
-* Pop an element from the end 
+* Pop the "first" element (head gets removed, second element becomes head) 
 * Push an element onto the beginning of the list (first element becomes second element)
 * Remove the (first occurance | all occurances) of an element by data content
 * Remove an element by position
