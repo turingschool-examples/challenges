@@ -6,7 +6,7 @@ Write ActiveRecord query statements for the following problems. You're welcome t
 
 ## Challenges
 
-* Find all the items that have the word "elegant" in the title. (If "granite" was not in your seeds, feel free to pick another adjective.)
+* Find all the items that have the word "granite" in the `name`. (If "granite" was not in your seeds, feel free to pick another adjective.)
 * Add three orders to a user.
 * Given an item. Associate it with an order without touching an `OrderItem` model.
 * Find the most popular items.
