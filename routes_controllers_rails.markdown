@@ -23,7 +23,7 @@ $ bundle
 
 ```ruby
 Rails.application.routes.draw do
-  get '/students', to 'students#index'
+  get '/students', to: 'students#index'
 end
 ```
 
@@ -33,7 +33,7 @@ Add a controller and a method within that controller that renders the text: "You
 
 ```ruby
 Rails.application.routes.draw do
-  get '/students', to 'students#index'
+  get '/students', to: 'students#index'
   resources :courses
 end
 ```
