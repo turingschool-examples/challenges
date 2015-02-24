@@ -16,6 +16,7 @@ Create a new rails project:
 
 ```
 $ rails new routes-controllers-practice
+$ cd routes-controllers-practice
 $ bundle
 ```
 
