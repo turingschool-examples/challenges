@@ -4,13 +4,17 @@
 
 This week, we talked about
 
+* rails
 * database schema design
 * authentication
 * authorization
-* pushing logic down the stack
 * git workflow
 
-This afternoon, use these new skills to add the following features to your IdeaBox Rails application. You'll work in the same pairs from yesterday. **TDD is not dead.**
+This afternoon, use these new skills to add the following features to a new Rails application. **TDD is not dead.**
+
+### Project Option 1: IdeaBox
+
+Let's create an app to record your ideas. 
 
 #### Categories
 
@@ -27,24 +31,54 @@ This afternoon, use these new skills to add the following features to your IdeaB
 
 The most simplistic way to implement images is to store a url to an online image. If you're feeling fancy and want to upload your own images, check out [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) or [Paperclip](https://github.com/thoughtbot/paperclip). 
 
-### Code Review
+#### Authentication and Authorization
 
-At 3:30, switch pairs. Spend 15 minutes reviewing each code base. 
+* users need to log in to see their ideas
+* users can only see their own ideas -- they should not be able to visit another user's page
+* users cannot create ideas for other users
+* users cannot create new categories -- only the admin can do that
+* users cannot create images -- only the admin can do that; however, a user can assign an image to their idea
 
-* Alexandra Robinson & Laura Whalin
-* Scott Crawford & Rich Shea 
-* Kit Pearson & Orion Osborn 
-* Brandon Mrsny & Krista A Nelson 
-* Bhargavi Satpathy & Michael Dao
-* Bryce Holcomb & Lydia Shafer
-* Jeffrey Wan & Emily Berkeley
-* Nathan Owsiany & Chris Luhring
+### Project Option 2: PointBox
+
+Create an app where an admin (let's say for example, Richard) can assign points to users and users can redeem those points for rewards.
+
+#### Points
+
+* points can be created ("assigned to a user") and destroyed only by the admin
+* users can see their total number of points on their dashboard
+
+#### Rewards
+
+* rewards can be created, edited, updated, and destroyed only by the admin
+* the list of possible rewards can be seen by regular users
+
+#### Redeeming Points
+
+* users can redeem their points for a reward
+* when users redeem their points, the points are NOT destroyed; instead, they are marked as "redeemed"
+* when a user redeems points for a reward, the user can see that reward on their dashboard
+
+#### Authentication and Authorization
+
+* users need to log in to see their points and rewards
+* users can only see their own points and rewards -- they should not be able to visit another user's page
+* users cannot add points to their account, nor can they create new rewards to add to the list
+* a user cannot redeem another user's points
+
+### Pairs
+
+* Trey Tomlinson & Dustin Gault
+* Markus Olsen & Stanley Siudzinski
+* Teresa Finn & Jeffrey Gu 
+* Austin Wood & Kyra Steenbock
+* Fred Block & DJ Greenfield & Miriam Moser
+* Edward McCarthy & Charles Valentino Espinoza
+* Lori Culberson & Paul Grever
 
 ### Homework
 
-Fork or clone the repository so that you and your original pair each have a separate copy. Finish implementing the category and image features individually using TDD. Add the link to your personal repository to [this document](https://github.com/turingschool/ruby-submissions/blob/master/1410/06_mini_project/06_mini_project.yml). 
-
-[Hackathon](http://www.meetup.com/Turing-Community-Events/events/219789015/) participants: Since you'll be Rails-ing all weekend, you're excused from the assignment.
+Fork or clone the repository so that you and your original pair each have a separate copy. Finish implementing the features individually using TDD. Add the link to your personal repository to [this document](https://github.com/turingschool/ruby-submissions/blob/master/1410/06_mini_project/06_mini_project.yml). 
 
 ### Resources
 
