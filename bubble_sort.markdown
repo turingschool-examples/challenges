@@ -85,3 +85,7 @@ swaps = 0
 puts "Final result: #{result}"
 puts "Swaps: #{swaps}"
 ```
+
+## Challenge 2: With Tests
+
+Implement bubble sort using one or more classes and many tests. Remember to spiral up your design. What's the simplest possible case? What's the next smallest step from there?
