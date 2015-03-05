@@ -39,6 +39,11 @@ The most simplistic way to implement images is to store a url to an online image
 * users cannot create new categories -- only the admin can do that
 * users cannot create images -- only the admin can do that; however, a user can assign an image to their idea
 
+#### Optional Extensions
+
+* Use Heroku to host your app
+* Implement OAuth login
+
 ### Project Option 2: PointBox
 
 Create an app where an admin (let's say for example, Richard) can assign points to users and users can redeem those points for rewards.
@@ -66,6 +71,11 @@ Create an app where an admin (let's say for example, Richard) can assign points 
 * users cannot add points to their account, nor can they create new rewards to add to the list
 * a user cannot redeem another user's points
 
+#### Optional Extensions
+
+* Use Heroku to host your app
+* Implement OAuth login
+
 ### Pairs
 
 * Trey Tomlinson & Dustin Gault
@@ -79,7 +89,6 @@ Create an app where an admin (let's say for example, Richard) can assign points 
 ### Homework
 
 Fork or clone the repository so that you and your original pair each have a separate copy. Finish implementing the features individually using TDD. Add the link to your personal repository to [this document](https://github.com/turingschool/ruby-submissions/blob/master/1412/04_rails_mini_project/04_rails_mini_project.yml). 
-
 ### Resources
 
 * [Nested Routes](http://guides.rubyonrails.org/routing.html#nested-resources)
