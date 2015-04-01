@@ -30,10 +30,10 @@ order
 an array of names as the value (all the people who are that age). e.g.
 `{24 => ['Juan', 'Steve', 'Jill']...}`
 
-### 2: State Capitols
+### 2: State Capitals
 
 You have 2 hashes, one which maps state names to state abbreviations,
-and one which maps state abbreviations to their capitol:
+and one which maps state abbreviations to their capital:
 
 ```
 states = {"Oregon" => "OR",
@@ -41,15 +41,16 @@ states = {"Oregon" => "OR",
           "New Jersey" => "NJ",
           "Colorado" => "CO"}
 
-capitols = {"OR" => "Salem",
+capitals = {"OR" => "Salem",
             "AL" => "Montgomery",
             "NJ" => "Trenton",
             "CO" => "Denver"}
 ```
 
 * Level 1: Write some code which given a state name ("Oregon") outputs
-  its capitol ("Salem")
+  its capital ("Salem")
 * Level 2: Handle the case when a state's information is not known by
   returning "Unknown"
-* Level 3: Now let's go the other way. Given a capitol name ("Denver"),
-  return the state name for which it is the capitol ("Colorado")
+* Level 3: Now let's go the other way. Given a capital name ("Denver"),
+  return the state name for which it is the capital ("Colorado")
+
