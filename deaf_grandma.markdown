@@ -40,6 +40,7 @@ LATER, SKATER!
 ready_to_quit = false
 puts "HEY KID!"
 
+input = gets
 until ready_to_quit
   # Your code here
 end
@@ -49,3 +50,5 @@ puts "LATER, SKATER!"
 
 In your code you'll definitely need to use `if` and likely an `elsif` and `else`.
 Whenever you're ready to exit the program, set `ready_to_quit` to `true`.
+
+Also remember that `gets` is the "inverse" method of `puts` -- while `puts` outputs information to the terminal, `gets` captures information from the user by presenting a command prompt and allowing them to type input.
