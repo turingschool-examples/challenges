@@ -92,9 +92,9 @@ How many characters are in your `SimpleString`?
 
 ```ruby
 a_string = SimpleString.new("hello")
-a_string.length          # => 5
+a_string.upcase          # => 5
 second_string = SimpleString.new("")
-second_string.length     # => 0
+second_string.upcase     # => 0
 ```
 
 Don't use the `length` built into `String`.
@@ -108,6 +108,7 @@ a_string = SimpleString.new("hello")
 a_string.end_with?("o")        # => true
 a_string.end_with?("x")        # => false
 a_string.end_with?("ello")     # => true
+a_string.end_with?("hllo")     # => false
 ```
 
 Don't use the methods `end_with?` or `start_with?` built-in to `String` to create
