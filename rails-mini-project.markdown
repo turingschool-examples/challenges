@@ -74,21 +74,12 @@ Create an app where an admin (let's say for example, Richard) can assign points 
 #### Optional Extensions
 
 * Use Heroku to host your app
-* Implement OAuth login
-
-### Pairs
-
-* Trey Tomlinson & Dustin Gault
-* Markus Olsen & Stanley Siudzinski
-* Teresa Finn & Jeffrey Gu 
-* Austin Wood & Kyra Steenbock
-* Fred Block & DJ Greenfield & Miriam Moser
-* Edward McCarthy & Charles Valentino Espinoza
-* Lori Culberson & Paul Grever
+* Implement Twitter or Github OAuth login
 
 ### Homework
 
-Fork or clone the repository so that you and your original pair each have a separate copy. Finish implementing the features individually using TDD. Add the link to your personal repository to [this document](https://github.com/turingschool/ruby-submissions/blob/master/1412/04_rails_mini_project/04_rails_mini_project.yml). 
+Fork or clone the repository so that you and your original pair each have a separate copy. Finish implementing the features individually using TDD. Add the link to your personal repository to [this document](https://github.com/turingschool/ruby-submissions/blob/master/1412/04_rails_mini_project/04_rails_mini_project.yml).
+
 ### Resources
 
 * [Nested Routes](http://guides.rubyonrails.org/routing.html#nested-resources)
