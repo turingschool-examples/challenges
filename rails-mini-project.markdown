@@ -78,7 +78,7 @@ Create an app where an admin (let's say for example, Richard) can assign points 
 
 ### Homework
 
-Fork or clone the repository so that you and your original pair each have a separate copy. Finish implementing the features individually using TDD. Add the link to your personal repository to [this document](https://github.com/turingschool/ruby-submissions/blob/master/1412/04_rails_mini_project/04_rails_mini_project.yml).
+Fork or clone the repository so that you and your original pair each have a separate copy. Finish implementing the features individually using TDD. Add the link to your personal repository to [this document](https://github.com/turingschool/ruby-submissions/blob/master/1502/05_rails_mini_project.yml).
 
 ### Resources
 
