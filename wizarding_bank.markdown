@@ -14,27 +14,103 @@ Using classes, meet the following requirements:
 
 (Note: Assume the default unit of currency is the galleon.)
 
-* Create a Person class to model a person. This person should have a name and a level of cash. `person1 = Person.new("John", 1000)`
+* Create a Person class to model a person. This person should have a name and a level of cash.
 ````
 person1 = Person.new("John", 1000)
 
 John has been created with 1000 galleons in cash.
+
+person2 = Person.new("Bob", 500)
+
+Bob has been created with 500 galleons in cash.
 ````
 
 * The person class should store a person's cash level, which banks they have an account with, and their balances at each bank.
-* Create a Bank class to create Banks with. Each bank should have a unique name. `chase = Bank.new("JP Morgan Chase")`
+* Create a Bank class to create Banks with. Each bank should have a unique name. 
+
+````
+chase = Bank.new("JP Morgan Chase")
+
+JP Morgan Chase has been created.
+
+wells_fargo = Bank.new("Wells Fargo")
+
+Wells Fargo has been created.
+````
+
 * The bank class should have a method that allows the creation of an account that is attached to a person, by passing it a person. 
-`chase.open_account(person1)`
-* Banks should be able to accept deposits by passing in a person and deposit amount to the deposit method. `chase.deposit(person1, 500)`
+
+````
+chase.open_account(person1)
+
+An account has been opened for John with JP Morgan Chase.
+
+````
+* Banks should be able to accept deposits by passing in a person and deposit amount to the deposit method.
 * When accepting a deposit, the person's cash level should decrease by the deposit amount, and the bank account balance should increase by that amount.
+````
+chase.deposit(person1, 750)
+
+750 galleons have been deposited into John's Chase account. Balance: 750 Cash: 250 
+````
+
+
 * A person should not be able to deposit more than their current level of cash.
-* Banks should be able to do withdrawals by passing in a person and withdrawal amount to the withdrawal method. `chase.withdrawal(person1, 250)`
+
+````
+chase.deposit(person1, 5000)
+
+John does not have enough cash to perform this deposit.
+
+````
+
+* Banks should be able to do withdrawals by passing in a person and withdrawal amount to the withdrawal method. 
+
+````
+chase.withdrawal(person1, 250)
+
+John has withdrawn 250 galleons. Balance: 250
+````
 * A person should not be able to withdraw more than they have in a bank. (No overdrafting.)
+
+````
+chase.withdrawal(person1, 25000)
+
+Insufficient funds.
+````
+
+
 * A bank should be able to transfer money to another bank. `chase.transfer(person1, wells_fargo, 250)`
+
+````
+chase.transfer(person1, wells_fargo, 250)
+
+John has transferred 250 galleons from JP Morgan Chase to Wells Fargo.
+````
+
 * Again, a person should not be able to transfer more money than their balance.
-* A person should not be able to transfer money to a bank they do not have an account with.
+
+````
+chase.transfer(person1, wells_fargo, 25000)
+
+Insufficient funds.
+````
+
+* A person should not be able to transfer money to or from a bank they do not have an account with.
+
+````
+chase.transfer(person1, wells_fargo, 250)
+
+Bob does not have an account with Wells Fargo.
+````
+
 * There should be a method that tells us the current total cash in the bank.
 
+````
+chase.total_cash
+
+Total Cash: 750 galleons
+````
 
 ### Level 2
 
