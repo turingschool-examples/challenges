@@ -43,6 +43,6 @@ In this new financial climate, there are now comapnies offering wizards and witc
 
 
 ### Extensions
-* Write tests.
+* Use TDD to complete this
 * Modify your program to handle the different denominations of currency. For your reference: there are 17 silver Sickles 
 to a gold Galleon, and 29 bronze Knuts to a Sickle.
