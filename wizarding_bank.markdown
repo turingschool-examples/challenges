@@ -16,13 +16,13 @@ Using classes, meet the following requirements:
 
 * Create a Person class to model a person. This person should have a name and a level of cash.
 ````
-person1 = Person.new("John", 1000)
+person1 = Person.new("Minerva", 1000)
 
-John has been created with 1000 galleons in cash.
+Minerva has been created with 1000 galleons in cash.
 
-person2 = Person.new("Bob", 500)
+person2 = Person.new("Luna", 500)
 
-Bob has been created with 500 galleons in cash.
+Luna has been created with 500 galleons in cash.
 ````
 
 * The person class should store a person's cash level, which banks they have an account with, and their balances at each bank.
@@ -43,7 +43,7 @@ Wells Fargo has been created.
 ````
 chase.open_account(person1)
 
-An account has been opened for John with JP Morgan Chase.
+An account has been opened for Minerva with JP Morgan Chase.
 
 ````
 * Banks should be able to accept deposits by passing in a person and deposit amount to the deposit method.
@@ -51,7 +51,7 @@ An account has been opened for John with JP Morgan Chase.
 ````
 chase.deposit(person1, 750)
 
-750 galleons have been deposited into John's Chase account. Balance: 750 Cash: 250 
+750 galleons have been deposited into Minerva's Chase account. Balance: 750 Cash: 250 
 ````
 
 
@@ -60,7 +60,7 @@ chase.deposit(person1, 750)
 ````
 chase.deposit(person1, 5000)
 
-John does not have enough cash to perform this deposit.
+Minerva does not have enough cash to perform this deposit.
 
 ````
 
@@ -69,7 +69,7 @@ John does not have enough cash to perform this deposit.
 ````
 chase.withdrawal(person1, 250)
 
-John has withdrawn 250 galleons. Balance: 250
+Minerva has withdrawn 250 galleons. Balance: 250
 ````
 * A person should not be able to withdraw more than they have in a bank. (No overdrafting.)
 
@@ -85,7 +85,7 @@ Insufficient funds.
 ````
 chase.transfer(person1, wells_fargo, 250)
 
-John has transferred 250 galleons from JP Morgan Chase to Wells Fargo.
+Minerva has transferred 250 galleons from JP Morgan Chase to Wells Fargo.
 ````
 
 * Again, a person should not be able to transfer more money than their balance.
@@ -101,7 +101,7 @@ Insufficient funds.
 ````
 chase.transfer(person1, wells_fargo, 250)
 
-Bob does not have an account with Wells Fargo.
+Luna does not have an account with Wells Fargo.
 ````
 
 * There should be a method that tells us the current total cash in the bank.
