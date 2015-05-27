@@ -14,9 +14,15 @@ Using classes, meet the following requirements:
 
 (Note: Assume the default unit of currency is the galleon.)
 
-* Create a Bank class to create Banks with. Each bank should have a unique name. `chase = Bank.new("JP Morgan Chase")`
 * Create a Person class to model a person. This person should have a name and a level of cash. `person1 = Person.new("John", 1000)`
+````
+person1 = Person.new("John", 1000)
+
+John has been created with 1000 galleons in cash.
+````
+
 * The person class should store a person's cash level, which banks they have an account with, and their balances at each bank.
+* Create a Bank class to create Banks with. Each bank should have a unique name. `chase = Bank.new("JP Morgan Chase")`
 * The bank class should have a method that allows the creation of an account that is attached to a person, by passing it a person. 
 `chase.open_account(person1)`
 * Banks should be able to accept deposits by passing in a person and deposit amount to the deposit method. `chase.deposit(person1, 500)`
