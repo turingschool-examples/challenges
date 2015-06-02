@@ -24,6 +24,7 @@ Article.create(title: "Weather", body: "Colorado weather is interesting.")
 
 * Can you replace this with a Rails route helper that provides the same behavior? Check the Rails Guides for Path and URL Helpers [here](http://guides.rubyonrails.org/routing.html#path-and-url-helpers). 
 * Can you replace the "Make a new article" link with another Rails route helper that leads to the form?
+* Can you add a link using a route helper on the `show.html.erb` page so that a user can get back to the articles index? 
 
 ### Form Helpers
 
