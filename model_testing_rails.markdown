@@ -1,6 +1,6 @@
 # Model Testing in Rails -- Challenges
 
-Add tests for the following features and make them pass one at a time. 
+Add tests for the following specifications and make them pass one at a time. 
 
 * 1) A fan should not be valid without an email. 
 * 2) A location is valid with a city, state, and country and should be invalid if they are missing a city, state, *or* country.
