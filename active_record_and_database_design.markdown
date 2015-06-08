@@ -2,7 +2,7 @@
 
 ### 1) Traffic Spy Schema (~45 minutes)
 
-Carefully read through the [Traffic Spy](http://tutorials.jumpstartlab.com/projects/traffic_spy.html) specifications. Play around with cURL.
+Carefully read through the [Traffic Spy](https://github.com/JumpstartLab/curriculum/blob/master/source/projects/traffic_spy.markdown) specifications. Play around with cURL.
 
 With your Traffic Spy team, design a database schema using [this online tool](http://ondras.zarovi.cz/sql/demo/). Be sure to normalize the database and include foreign keys to show relationships between tables. 
 
@@ -67,8 +67,7 @@ What about this?
 
 #### Extension
 
-* Create a `/statuses` route in your controller that renders a view with clickable links for each status. The link should go to a `/statuses/:id` route that renders a view with all tasks associated with that status. 
-
+* Create a navbar in your layout that includes clickable links for each status. The link should go to a `/statuses/:id` route that renders a view with all tasks associated with that status. 
 * Change out the sqlite database for a postgres database. 
 
 ### Outside Resources

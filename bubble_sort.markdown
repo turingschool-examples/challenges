@@ -89,3 +89,9 @@ puts "Swaps: #{swaps}"
 ## Challenge 2: With Tests
 
 Implement bubble sort using one or more classes and many tests. Remember to spiral up your design. What's the simplest possible case? What's the next smallest step from there?
+
+## Challenge 3: Full Collection Passes
+
+The version of bubble sort described above is actually a slightly simplified version of the algorithm which uses a "short-circuiting" approach to making successive iterations. As soon as a number is swapped, go back to the beginning of the list and try again. According to the "real" algorithm, every pass should actually iterate completely through the list, and then decide whether another pass is needed.
+
+See if you can write another, slightly modified, version of the algorithm which follows this pattern. You'll need to add some code to keep track during each pass of whether a swap has been made _any time during that pass_. The [wikipedia entry on bubble sort](http://en.wikipedia.org/wiki/Bubble_sort) has some useful visualizations of the process which you can refer to to aid your understanding.

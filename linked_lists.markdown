@@ -67,7 +67,7 @@ end
 
 ## Constraints
 
-* This is a conceptual puzzle more than anything else. Don't spend more than 10 hours on it.
+* This is a conceptual puzzle more than anything else. Don't spend more than 16 hours on it.
 * Avoid using other ruby collections (Arrays, Hashes, etc) in your implementation.
 
 ## Resources

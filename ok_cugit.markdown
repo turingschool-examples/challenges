@@ -29,7 +29,7 @@ name/email pair should not appear more than once.
 ```ruby
 require_relative 'finder'
 
-repo_name = ARGV[2]
+repo_name = ARGV[0]
 finder = OkCuGit::Finder.new(repo_name)
 contacts = finder.all_contributors
 puts contacts.join("\n")
