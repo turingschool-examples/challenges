@@ -34,3 +34,11 @@ finder = OkCuGit::Finder.new(repo_name)
 contacts = finder.all_contributors
 puts contacts.join("\n")
 ```
+
+## Extensions
+
+* Write the results to a text file in ascending order by last name
+* Write the results to a CSV file.
+
+
+
