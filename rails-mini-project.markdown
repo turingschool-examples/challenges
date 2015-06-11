@@ -10,7 +10,7 @@ This week, we talked about
 * authorization
 * git workflow
 
-This afternoon, use these new skills to add the following features to a new Rails application. **TDD is not dead.**
+This afternoon, use these new skills to start adding the following features to a new Rails application. **TDD is not dead.**
 
 ### Project Option 1: IdeaBox
 
@@ -42,7 +42,7 @@ The most simplistic way to implement images is to store a url to an online image
 #### Optional Extensions
 
 * Use Heroku to host your app
-* Implement OAuth login
+* Implement Twitter, Github, or Facebook OAuth login
 
 ### Project Option 2: PointBox
 
@@ -73,12 +73,12 @@ Create an app where an admin (let's say for example, Richard) can assign points 
 
 #### Optional Extensions
 
-* Use Heroku to host your app
-* Implement Twitter or Github OAuth login
+* Use Heroku to host your app (you'll need to use a Postgres database)
+* Implement Twitter, Github, or Facebook OAuth login
 
 ### Homework
 
-Fork or clone the repository so that you and your original pair each have a separate copy. Finish implementing the features individually using TDD. Add the link to your personal repository to [this document](https://github.com/turingschool/ruby-submissions/blob/master/1502/05_rails_mini_project.yml).
+Fork or clone the repository so that you and your original pair each have a separate copy. Finish implementing the features individually using TDD. Add the link to your personal repository to [this document](https://github.com/turingschool/ruby-submissions/blob/master/1503/06_mini_project.yml).
 
 ### Resources
 
