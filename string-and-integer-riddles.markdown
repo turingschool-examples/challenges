@@ -1,4 +1,4 @@
-w## String and Integer Riddles
+## String and Integer Riddles
 
 ### Strings
 
