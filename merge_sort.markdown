@@ -13,8 +13,8 @@ to get them sorted.
 
 ## Implementing the Algorithm
 
-Find the [wikipedia description of Merge Sort here](). You'll want to pay attention to the animated
-GIF that illustrates the concept. There's also [this sweet line dance]().
+Find the [wikipedia description of Merge Sort here](https://en.wikipedia.org/wiki/Merge_sort). You'll want to pay attention to the animated
+GIF that illustrates the concept. There's also [this sweet line dance](https://www.youtube.com/watch?v=XaqR3G_NVoo).
 
 Implement your own version of the algorithm. Avoid the temptation to Google solutions in Ruby or
 other languages. Use just the information linked above and you're own deep thinking.
