@@ -1,12 +1,6 @@
 # ActiveRecord and Database Design
 
-### 1) Traffic Spy Schema (~45 minutes)
-
-Carefully read through the [Traffic Spy](https://github.com/JumpstartLab/curriculum/blob/master/source/projects/traffic_spy.markdown) specifications. Play around with cURL.
-
-With your Traffic Spy team, design a database schema using [this online tool](http://ondras.zarovi.cz/sql/demo/). Be sure to normalize the database and include foreign keys to show relationships between tables. 
-
-### 2) TaskManager and ActiveRecord (~1-2 hours)
+### 1) TaskManager and ActiveRecord (~1-2 hours)
 
 1) Using a migration, add a new table to task manager for statuses. The only attribute of a status is a `name`. A task belongs to a status and a status can have many tasks. Don't forget to add a foreign key of status_id to the task table. 
 
@@ -70,10 +64,8 @@ What about this?
 * Create a navbar in your layout that includes clickable links for each status. The link should go to a `/statuses/:id` route that renders a view with all tasks associated with that status. 
 * Change out the sqlite database for a postgres database. 
 
-### Outside Resources
+### 2) Traffic Spy Project Processing and Schema Design
 
-Below are a few tutorials that walk through creating a Postgres-Sinatra application that uses ActiveRecord.
+Carefully read through the [Traffic Spy](https://github.com/JumpstartLab/curriculum/blob/master/source/projects/traffic_spy.markdown) specifications. Play around with cURL.
 
-* [Designing With Class: Sinatra + PostgreSQL + Heroku](http://mherman.org/blog/2013/06/08/designing-with-class-sinatra-plus-postgresql-plus-heroku/#.VOIsu1PF9h6)
-* [Sinatra: Building an ActiveRecord and Postgres application](http://www.millwoodonline.co.uk/blog/sinatra-activerecord-postgres-application)
-* [making-a-simple-database-driven-website-with-sinatra-and-heroku](https://samuelstern.wordpress.com/2012/11/28/making-a-simple-database-driven-website-with-sinatra-and-heroku/)
+With your Traffic Spy team, design a database schema using [this online tool](http://ondras.zarovi.cz/sql/demo/). Be sure to normalize the database and include foreign keys to show relationships between tables. 

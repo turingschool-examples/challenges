@@ -51,6 +51,7 @@ Write an implementation of a linked list which can __at least__ do all of the fo
 
 ## Constraints
 
+* Make sure that your code is well tested for both *expected cases* and *edge cases*.
 * Avoid using other ruby collections (Arrays, Hashes, etc) in your implementation.
 
 ## Resources
