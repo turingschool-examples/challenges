@@ -67,7 +67,7 @@ end
 
 ## Constraints
 
-* This is a conceptual puzzle more than anything else. Don't spend more than 16 hours on it.
+* Make sure that your code is well tested for both *expected cases* and *edge cases*.
 * Avoid using other ruby collections (Arrays, Hashes, etc) in your implementation.
 
 ## Resources
