@@ -57,7 +57,7 @@ Can you add something to the end of the `resources :teachers` line in order to o
 
 Extensions:
 
-1) With `resources :teachers` you typically access a single teacher with a numeric ID like `/teachers/6`. Can you make it so their last name is used instead of the numeric ID (like `/teachers/warbelow`)? Use [this blog post](http://blog.teamtreehouse.com/creating-vanity-urls-in-rails) for help.
+1) With `resources :teachers` you typically access a single teacher with a numeric ID like `/teachers/6`. Can you make it so their last name is used instead of the numeric ID (like `/teachers/warbelow`)? Use [this blog post](http://blog.teamtreehouse.com/creating-vanity-urls-in-rails) and/or [this Stack Overflow answer](http://stackoverflow.com/questions/6592038/change-the-name-of-the-id-parameter-in-routing-resources-for-rails). 
 
 2) What does the following piece of code do? How do you have to modify your controllers in order to access these routes?
 
