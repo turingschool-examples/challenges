@@ -4,25 +4,31 @@ Clone [this repo](https://github.com/rwarbelow/form_playground), then bundle, ru
 
 ### Setup
 
-* go into the console and add a few articles:
+* take a look at `seeds.rb` inside of the `db` folder. What is it doing? What would you expect to happen when you run `rake db:seed`? 
+* run `rake db:seed`
+* start up the rails console: `rails c`
+* check that you have three articles in the development database
 
 ```
-Article.create(title: "Animals", body: "They are cute.")
-Article.create(title: "Food", body: "It is delicious.")
-Article.create(title: "Weather", body: "Colorado weather is interesting.")
+Article.count
+   (0.1ms)  SELECT COUNT(*) FROM "articles"
+ => 3 
 ```
 
-### Route Helpers
+* exit out of the rails console: `exit`
+
+### Experimenting with Route Helpers
 
 * Start your server with `rails s`.
-* Navigate to `localhost:3000/articles`
-* Take a look at the code that generated the links to the individual articles inside of `app/views/articles/index.html.erb`. Right now, that code looks like this:
+* Navigate to `localhost:3000/articles`. You should see each of the article titles as a link, in addition to a link for making a new article. 
+* In your text editor, open up `app/views/articles/index.html.erb`. Right now, the code to make each individual article link looks like this:
 
 ```erb
   <a href="/articles/<%= article.id %>"><%= article.title %></a> <br>
 ```
 
-* Can you replace this with a Rails route helper that provides the same behavior? Check the Rails Guides for Path and URL Helpers [here](http://guides.rubyonrails.org/routing.html#path-and-url-helpers). 
+* This should look pretty similar to how you created links in TaskManager with Sinatra. 
+* Can you replace this bit of code with a Rails route helper that provides the same behavior? Check the Rails Guides for Path and URL Helpers [here](http://guides.rubyonrails.org/routing.html#path-and-url-helpers). 
 * Can you replace the "Make a new article" link with another Rails route helper that leads to the form?
 * Can you add a link using a route helper on the `show.html.erb` page so that a user can get back to the articles index? 
 * How is the prefix section from the output of running `rake routes` connected with route helpers? 
