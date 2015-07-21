@@ -10,7 +10,7 @@ Clone [this repo](https://github.com/rwarbelow/form_playground), then bundle, ru
 * check that you have three articles in the development database
 
 ```
-Article.count
+> Article.count
    (0.1ms)  SELECT COUNT(*) FROM "articles"
  => 3 
 ```
