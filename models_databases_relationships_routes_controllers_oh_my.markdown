@@ -28,7 +28,7 @@
 
 #### Connecting Routes and Controllers
 
-Use our routes and controllers lesson from yesterday to add functionality so that:
+Use our routes and controllers lesson from [yesterday](https://github.com/turingschool/lesson_plans/blob/master/ruby_02-web_applications_with_ruby/rest_routing_and_controllers_in_rails.markdown) to add functionality so that:
 
 * when visiting `'/students'`, text is rendered with the names of all of the students
 * when visiting `'/students/:id'`, text is rendered showing the student's name and a list of that student's addresses. 
