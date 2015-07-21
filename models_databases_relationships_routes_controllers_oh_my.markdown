@@ -16,9 +16,9 @@
 
 4) Create a plain Ruby class and check how many methods are availble both for the class and an instance of the class.
 
-5) Use the class methods `all` to see all Students and `find` / `find_by` to locate a student by an id or other attribute.
+5) Use the instance methods `new_record?`, `update_attributes`, and `save` on `student`. What do they do? How are they used? Reference the docs if you're stuck.
 
-6) Use the instance methods `new_record?`, `update_attributes`, and `save` on `student`. What do they do? How are they used? Reference the docs if you're stuck. 
+6) Use the class methods `all` to see all Students and `find` / `find_by` to locate a student by an id or other attribute.
 
 7) Set up a one-to-many relationship between the Address and Student models. (You'll first need to create the Address model if you haven't already).
 
@@ -28,7 +28,7 @@
 
 #### Connecting Routes and Controllers
 
-Use our routes and controllers lesson from [yesterday](https://github.com/turingschool/lesson_plans/blob/master/ruby_02-web_applications_with_ruby/rest_routing_and_controllers_in_rails.markdown) to add functionality so that:
+Use our routes and controllers lesson from yesterday to add functionality so that:
 
 * when visiting `'/students'`, text is rendered with the names of all of the students
 * when visiting `'/students/:id'`, text is rendered showing the student's name and a list of that student's addresses. 
