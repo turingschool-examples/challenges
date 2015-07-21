@@ -69,7 +69,7 @@ The project will be assessed with the following rubric:
 
 ### 1. Functional Expectations
 
-* 4: Application fulfills all base expectations and two extensions
+* 4: Application fulfills all base expectations and the one extension
 * 3: Application fulfills all base expectations
 * 2: Application is missing one base expectation
 * 1: Application is missing more than one base expectation
