@@ -46,7 +46,7 @@ Clone [this repo](https://github.com/rwarbelow/form_playground), then bundle, ru
 
 You'll see the keys of `utf8`, `authenticity_token`, `commit`, `controller`, and `action`, but ignore them for now and just focus on the `article` key. 
 
-* How are the params nested? How would you access *just* the article params?
+* How are the params nested? How would you access *just* the article data (title and description) from the `params` hash?
 * Go back to `app/views/articles/new.html.erb`. Comment out the first form and uncomment the second form. You'll need to manually take out or put in each `#` in the erb tags. 
 * Repeat the steps above. How is `form_tag` different from `form_for`? What is different about the HTML that is generated? Are the params nested? What implications might this have for using the params to create a new article? 
 * Do you prefer `form_for(@article)...` or `form_tag articles_path` for creating a new article? Why? 
