@@ -28,7 +28,7 @@ Clone [this repo](https://github.com/rwarbelow/form_playground), then bundle, ru
 ```
 
 * This should look pretty similar to how you created links in TaskManager with Sinatra. 
-* Can you replace this bit of code with a Rails route helper that provides the same behavior? Check the Rails Guides for Path and URL Helpers [here](http://guides.rubyonrails.org/routing.html#path-and-url-helpers). This might also be a good opportunity to practice your Stack Overflow skills in trying to find examples and/or explanations :) 
+* Can you replace this bit of code with a Rails route helper that provides the same behavior? Try using [link_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to), and check the Rails Guides for Path and URL Helpers [here](http://guides.rubyonrails.org/routing.html#path-and-url-helpers). This might also be a good opportunity to practice your Stack Overflow skills in trying to find examples and/or explanations :) 
 * Can you replace the "Make a new article" link with another Rails route helper that leads to the form?
 * Can you add a link using a route helper on the `show.html.erb` page so that a user can get back to the articles index? 
 * How is the prefix section from the output of running `rake routes` connected with route helpers? 
