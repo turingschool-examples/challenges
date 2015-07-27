@@ -23,6 +23,6 @@ The object of this exercise is to recreate the functionality of the
 `flatten` method that we have in Ruby's Array class.
 
 Your solution should make use of methods and classes. Be sure to write good
-tests.
+tests. Do not use `.to_s`
 
 
