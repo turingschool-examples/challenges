@@ -18,3 +18,11 @@ Implement a `CustomArray` class that works like this:
 
 But the `CustomArray` class **may not use the
 built-in `.flatten` method**.
+
+The object of this exercise is to recreate the functionality of the
+`flatten` method that we have in Ruby's Array class.
+
+Your solution should make use of methods and classes. Be sure to write good
+tests.
+
+
