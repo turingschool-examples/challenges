@@ -38,6 +38,7 @@ The most simplistic way to implement images is to store a url to an online image
 * users cannot create ideas for other users
 * users cannot create new categories -- only the admin can do that
 * users cannot create images -- only the admin can do that; however, a user can assign an image to their idea
+* visitors can create user accounts
 
 #### Optional Extensions
 
@@ -70,6 +71,7 @@ Create an app where an admin (let's say for example, Richard) can assign points 
 * users can only see their own points and rewards -- they should not be able to visit another user's page
 * users cannot add points to their account, nor can they create new rewards to add to the list
 * a user cannot redeem another user's points
+* admin can create a user
 
 #### Optional Extensions
 
