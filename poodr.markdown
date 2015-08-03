@@ -26,3 +26,30 @@ fibber.print(10) # => prints the first 10 number of the fibonacci sequence to
 ```
 
 Build `Fibber`, `ScreenPrinter`, and `FilePrinter` classes to make that work.
+
+## Part 3: Experimenting with Arguments
+
+Read pages 42-46 just for completeness. Then read 46-51 focusing on argument
+ordering and defaults.
+
+Imagine that you're writing a real estate application. We need to create
+records (objects) that represent both a `SingleFamilyHome` and an `ApartmentHome`.
+Both of them have...
+
+* A `square_footage`. For a `SingleFamilyHome` the default is `1000`. For an
+`ApartmentHome` the default is `400`
+* A `monthly_payment`. For a `SingleFamilyHome` the default is `1500`. For an
+`ApartmentHome` the default is `800`
+
+Build an implementation of these two classes. Does it make sense for them to both
+inherit from a single ancestor?
+
+In addition to their common attributes...
+
+* A `SingleFamilyHome` has a boolean `has_yard` attribute
+* A `SingleFamilyHome` has a `year_built` attribute
+* An `ApartmentHome` has a `maintainance_fee` attribute
+* An `ApartmentHome` has a boolean `doorman` attribute
+
+Can you implement these two classes such that all attributes *can* be set in the
+initializer, but only the `square_footage`, `monthly_payment`, and `year_built`/`maintainance_fee` are required?
