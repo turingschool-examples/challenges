@@ -53,3 +53,17 @@ In addition to their common attributes...
 
 Can you implement these two classes such that all attributes *can* be set in the
 initializer, but only the `square_footage`, `monthly_payment`, and `year_built`/`maintainance_fee` are required?
+
+## Part 4: Further Dependency Considerations
+
+Read pages 51 through the end of the chapter on 57 and answer the following
+two questions:
+
+1. Look at the Enigma project you've completed. What are two or three components
+or ideas in the system that are likely to change? Does your implementation make
+those easy or difficult to change?
+2. Consider the character map in Enigma. Imagine that there are multiple character
+maps available for messages. Maybe some messages are in all normal ASCII characters,
+while others use cyrillic letters. The user might specify the character set by
+name on the command line. How would you tweak your implementation to handle
+multiple character sets at once?
