@@ -16,9 +16,9 @@ have contributed. Write a program that can generate a list of those people.
 From your terminal:
 
 ```
-$ ruby ./okcugit turingschool/challenges
-<Jeff Casimir> jeff@turing.io
-<Rachel Warbelow> rachel@turing.io
+$ ruby ./okcugit.rb turingschool/challenges
+"Jeff Casimir" <jeff@turing.io>,
+"Rachel Warbelow" <rachel@turing.io>
 ```
 
 The output should be alphabetized by the first character of the name. An
