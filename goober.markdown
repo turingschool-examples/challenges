@@ -26,6 +26,7 @@ _Do they have a bike rickshaw option?_ - Horace Williams
             - [A - Rider Page "live" updating (long-polling)](#a---rider-page-live-updating-long-polling)
             - [B - Ride Distance / ETA](#b---ride-distance--eta)
             - [C - Admins and "Rush" Pricing](#c---admins-and-rush-pricing)
+    - [Detailed Rubric](#detailed-rubric)
 
 <!-- markdown-toc end -->
 
@@ -367,3 +368,57 @@ we don't need to worry about any scheduling or automated expiration logic
 * For now we won't worry about the case when a ride begins during Rush but
 ends after it. You can assess Rush rates based on whether a Rush is active
 __when a ride is completed.__
+
+## Detailed Rubric
+
+Subjective evaluation will be made on your work/process according to the following criteria:
+
+### 1. Satisfactory Progress
+
+* 4: Developer completes iterations 1 through 9 as well as an additional supporting feature or other
+fancy pizzazz.
+* 3: Developer completes iterations 1 through 9 with few bugs or missing functionality
+* 2: Developer completes iterations 1-6+ with some bugs or missing functionality
+* 1: Developer struggles to complete initial 6 iterations, or there are significant issues with delivered functionality.
+
+### 2. Ruby Syntax & Style
+
+* 4: Developer is able to write Ruby demonstrating a broad/deep understanding of available language features. Application demonstrates great understanding of Object-Oriented modeling.
+* 3: Developer is able to write idiomatic and effective Ruby. Application makes good use of Object-Oriented modeling with few gaps in class identification and component extraction.
+* 2: Developer is able to accomplish tasks with Ruby code, but lacks attention to broader design and organizational concepts.
+* 1: Developer is generally able to write Ruby, but code is sloppy, disorganized, or poorly factored.
+
+### 3. Rails Style & API
+
+* 4: Developer is able to craft Rails features that follow the principles of MVC, push business logic down the stack, and skillfully utilizes ActiveRecord to model application state.
+* 3: Developer generally writes clean Rails features that make smart use of Ruby, with some struggles in pushing logic down the stack. The application displays good judgement in modeling the problem as data.
+* 2: Developer struggles with some concepts of MVC
+* 1: Developer struggles with MVC and pushing logic down the stack
+* 0: Developer shows little or no understanding of how to craft Rails applications
+
+### 4. Testing
+
+* 4: Developer excels at taking small steps and using the tests for *both* design and verification
+* 3: Developer writes tests that are effective validation of functionality, but don't drive the design
+* 2: Developer uses tests to guide development, but implements more functionality than the tests cover
+* 1: Developer is able to write tests, but they're written after or in the middle of implementation
+* 0: Developer does not use tests to guide development
+
+### 5. User Interface
+
+* 4: The application is pleasant, logical, and easy to use
+* 3: The application has many strong pages/interactions, but a few holes in lesser-used functionality
+* 2: The application shows effort in the interface, but the result is not effective
+* 1: The application is confusing or difficult to use
+
+### 6. Javascript (if applicable)
+
+* 4: Developer skillfully utilizes client-side development tools and
+  patterns to enhance the application
+* 3: Developer effectively uses Javascript to solve client-side
+  application problems. Generally uses the right JS technique for the
+  problem at hand.
+* 2: Developer can accomplish some JS-based tasks, but sometimes
+  struggles with syntax and selecting proper approach
+* 1: Developer struggles to write effective Javascript. Code has
+  significant flaws or basic syntax / structure issues.
