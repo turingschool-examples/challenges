@@ -15,11 +15,11 @@ l = "Last"
 
 Use *only* the "string concatenation" technique to complete the following:
 
-A. What code can you write to output the string `"FirstLast"`?
-B. What code can you write to output the string `"LastFirst"`?
-C. What code can you write to output the string `"First Last"`?
-D. What code can you write to output the string `"Last First Last First"`?
-E. What code can you write to output the string `"FirstLast"`?
+1. What code can you write to output the string `"FirstLast"`?
+2. What code can you write to output the string `"LastFirst"`?
+3. What code can you write to output the string `"First Last"`?
+4. What code can you write to output the string `"Last First Last First"`?
+5. What code can you write to output the string `"FirstLast"`?
 
 Then repeat A-E using only the "string interpolation" technique.
 
