@@ -77,7 +77,23 @@ valid = false
 * You don't need to write any methods or create classes
 * You don't need automated tests
 * You can pull a character out of a string using `my_string[X]` where `X` is a numeric position number
-* You can convert a string to an integer by calling `.to_i` (ex: "4".to_i)
+* You can convert a string to an integer by calling `.to_i` (ex: `"4".to_i`)
+
+The purpose of these hints:
+
+> @paddington: so was the whole don’t use arrays or loops things a misdirection, or optional?
+
+-- Student
+
+> Optional. Would probably seem tricky if you read it as "don't use arrays or loops" and then saw me use arrays and loops. However, it was intended to bolster students who were intimidated by loops "You don't need" (to worry about all that shit). As with everything in life, there is no truth, only tradeoffs. So what are the tradeoffs there?
+>
+> If you don't use loops and arrays, then an entire domain of complexity goes away (how to work with them as collections), and you can write out each step by itself. So if the amount of unknowns is large for you, then this is a good way to remove a big unknown, scaling the problem down to something you're more likely to succeed at. It will also be much easier to see how one of these digits changes as it flows through the program.
+>
+> If you do use loops and arrays, then you can do a step one time instead of 16 times (ie instead of calling `to_i`  on 16 different digits, you only have to call it on the current digit. This means you have to write way less code, and if you ever discover that you need to make a change, you only have to do it in the one place rather than in 16 places. It also lets you think in certain higher level abstractions like  "I have digits as strings, but I want them as integers", an idea that the mathematicians call `map` (the same way a map tells you how to get from where you are to where you want to be, the `map` enumerable tells you how to get from an array of one thing (numbers in strings) to an array of another thing (integers).
+>
+> As you develop the skill of thinking in these higher level terms, such abstractions become invaluable, and it is inhibiting to manually unroll a loop, but if those patterns of thought are under-developed, then such abstractions are opaque and out of reach. So the best approach is a function of which tradeoffs best balance all the considerations. (e
+
+-- @paddington
 
 ### Sample Data
 
