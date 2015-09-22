@@ -61,13 +61,6 @@ you to stick with tools that are comfortable and familiar to you. This
 is probably not the time to start experimenting with that Erlang-based
 neural network recommendation library you saw on hacker news last week.
 
-## Time Allotment
-
-You have until 12 PM tomorrow to complete the assignment. It is intended
-to take about 8 hours of diligent and on-target work, but unexpected
-issues, rabbit holes, and other coding phenomena can always interfere
-with this.
-
 ## Rubric
 
 The project will be assessed on the following criteria:
