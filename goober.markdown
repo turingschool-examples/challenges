@@ -11,6 +11,7 @@ _Do they have a bike rickshaw option?_ - Horace Williams
 
 - [Goober -- Rides When You Want Them](#goober----rides-when-you-want-them)
     - [Overview](#overview)
+    - [Wireframes - The content for these will be covered in the following project iterations. Please use these       as a guideline and iterate/change them as you see fit.](#wireframes)
     - [Project Iterations](#project-iterations)
         - [Iteration 1 - Sign Up](#iteration-1---sign-up)
         - [Iteration 2 - Requesting Rides (Rider)](#iteration-2---requesting-rides-rider)
@@ -46,6 +47,10 @@ A basic overview of the features will be targeting includes:
 * Computing ride total
 * Tracking and managing Ride Request state / lifecycle
 * Special Supporting Features!
+
+## Wireframes
+
+![Wireframes](http://i.imgur.com/3A7oPuY.png)
 
 ## Project Iterations
 
@@ -152,7 +157,7 @@ my listed Passenger Capacity should __not__ appear in the list.
 __Technical Note__
 
 * We'll be dealing with 2 main "dashboard" pages for the app -- one
-for riders and one for passengers. We'll leave it up to you to
+for drivers and one for riders. We'll leave it up to you to
 model these in terms of the application's routing and authorization
 concerns
 * Assume that any "un-authenticated" user attempting to visit a dashboard
