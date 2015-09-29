@@ -11,7 +11,8 @@ _Do they have a bike rickshaw option?_ - Horace Williams
 
 - [Goober -- Rides When You Want Them](#goober----rides-when-you-want-them)
     - [Overview](#overview)
-    - [Wireframes - The content for these will be covered in the following project iterations. Please use these       as a guideline and iterate/change them as you see fit.](#wireframes)
+    - [Wireframes](#wireframes)
+    - [Deployment](#deployment)
     - [Project Iterations](#project-iterations)
         - [Iteration 1 - Sign Up](#iteration-1---sign-up)
         - [Iteration 2 - Requesting Rides (Rider)](#iteration-2---requesting-rides-rider)
@@ -51,6 +52,10 @@ A basic overview of the features will be targeting includes:
 ## Wireframes
 
 ![Wireframes](http://i.imgur.com/3A7oPuY.png)
+
+## Deployment
+
+For your evaluation, your project should be deployed and running on Heroku.
 
 ## Project Iterations
 
