@@ -98,7 +98,7 @@ If you finish early, consider implementing one of these extensions:
 * 2: Developer writes effective code, but does not breakout logical components
 * 1: Developer writes code with unnecessary variables, operations, or steps which do not increase clarity
 
-### 6. Javascripy Usage & Style
+### 6. Javascript Usage & Style
 
 * 4: Developer uses Javascript
 * 3: Developer uses Javascript effectively and in the right places, and demonstrates understanding
