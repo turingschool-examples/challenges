@@ -31,9 +31,9 @@ name_1 = "Megan Smith"
 name_2 = "Todd Park"
 ```
 
-A. Can you come up with *two* ways to output just the fragment `"Megan"` from `name_1`?
-B. Would either of your techniques from A would work to output `"Todd"` from `name_2`? Why or why not?
-C. Write code that can output the initials of `name_2`.
+1. Can you come up with *two* ways to output just the fragment `"Megan"` from `name_1`?
+2. Would either of your techniques from A would work to output `"Todd"` from `name_2`? Why or why not?
+3. Write code that can output the initials of `name_2`.
 
 ## Just Integers
 
