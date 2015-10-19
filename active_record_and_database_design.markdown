@@ -64,3 +64,8 @@ What about this?
 * Create a navbar in your layout that includes clickable links for each status. The link should go to a `/statuses/:id` route that renders a view with all tasks associated with that status. 
 * Change out the sqlite database for a postgres database. 
 
+### 2) Traffic Spy
+
+* Read through Traffic Spy assignment 
+* Transfer project requirements to stories and insert into a project management tool like Waffle
+* Begin thinking about how to design your schema
