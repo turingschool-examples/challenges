@@ -64,8 +64,3 @@ What about this?
 * Create a navbar in your layout that includes clickable links for each status. The link should go to a `/statuses/:id` route that renders a view with all tasks associated with that status. 
 * Change out the sqlite database for a postgres database. 
 
-### 2) Traffic Spy Project Processing and Schema Design
-
-Carefully read through the [Traffic Spy](https://github.com/JumpstartLab/curriculum/blob/master/source/projects/traffic_spy.markdown) specifications. Play around with cURL.
-
-With your Traffic Spy team, design a database schema using [this online tool](http://ondras.zarovi.cz/sql/demo/). Be sure to normalize the database and include foreign keys to show relationships between tables. 
