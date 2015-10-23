@@ -40,3 +40,10 @@ If you have completed the spec, there are improvements that can be made.
 * Can you get rid of `until` and `while` loops?
 * Can you get rid of your `if` statements? And no, using `case` statements doesn't count. Take a look at the Open/Closed Principle in the article above and view the `parse` method in the before and after example for inspiration.
 
+### Week 3
+
+* Passion Projects
+
+### Ideas
+
+* Jorge and Josh live pairing on Mastermind???
