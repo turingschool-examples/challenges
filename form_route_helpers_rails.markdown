@@ -4,8 +4,9 @@ Clone [this repo](https://github.com/rwarbelow/form_playground), then bundle, ru
 
 ### Setup
 
+* open the console (`rails c`) and check how many articles already exist. 
 * take a look at `seeds.rb` inside of the `db` folder. What is it doing? What would you expect to happen when you run `rake db:seed`? 
-* run `rake db:seed`
+* exit the console and run `rake db:seed`
 * start up the rails console: `rails c`
 * check that you have three articles in the development database
 
@@ -48,7 +49,7 @@ You'll see the keys of `utf8`, `authenticity_token`, `commit`, `controller`, and
 
 * How are the params nested? How would you access *just* the article data (title and description) from the `params` hash?
 * Go back to `app/views/articles/new.html.erb`. Comment out the first form and uncomment the second form. You'll need to manually take out or put in each `#` in the erb tags. 
-* Repeat the steps above. How is `form_tag` different from `form_for`? What is different about the HTML that is generated? Are the params nested? What implications might this have for using the params to create a new article? 
-* Do you prefer `form_for(@article)...` or `form_tag articles_path` for creating a new article? Why? 
+* Repeat the steps above. How is `form_tag` different from `form_for`? Either StackOverflow this, look at the docs, or put a `byebug` in the controller and take a look at your params. What is different about the HTML that is generated? (use Chrome inspector to look at the HTML). Are the params nested? What implications might this have for using the params to create a new article? 
+* Which do you think makes more sense for creating a new article: `form_for(@article)...` or `form_tag articles_path`? Why? 
 
 Want to read more about form helpers in Rails? Check out the [docs](http://guides.rubyonrails.org/form_helpers.html). 
