@@ -47,3 +47,16 @@ If you have completed the spec, there are improvements that can be made.
 ### Ideas
 
 * Jorge and Josh live pairing on Mastermind???
+* Show and Tell
+* Front End
+  * Wireframe - Live Coding
+  * CSS Garden - Provide HTML and have students implement a different layout.
+  * Visual Design - Non-Coding
+  * Displaying things inline - Flexboxes
+  * Frontend Bookclub
+  * JS Frameworks
+  * Shared Pinterest board for sharing layout inspiration
+* Backend
+  * Low Level Caching
+  * Handle custom errors
+  * Advanced RSpec Testing
