@@ -14,7 +14,7 @@ This afternoon, use these new skills to start adding the following features to a
 
 ### Project Option 1: IdeaBox
 
-Let's create an app to record your ideas. 
+Let's create an app to record your ideas. Host your app live on Heroku. 
 
 #### Categories
 
@@ -42,12 +42,13 @@ The most simplistic way to implement images is to store a url to an online image
 
 #### Optional Extensions
 
-* Use Heroku to host your app
 * Implement Twitter, Github, or Facebook OAuth login
+* Use HAML for your views
+* TDD using Rspec instead of Test::Unit
 
 ### Project Option 2: PointBox
 
-Create an app where an admin (let's say for example, Richard) can assign points to users and users can redeem those points for rewards.
+Create an app where an admin (let's say for example, Richard) can assign points to users and users can redeem those points for rewards. Host your app live on Heroku. 
 
 #### Points
 
@@ -75,8 +76,9 @@ Create an app where an admin (let's say for example, Richard) can assign points 
 
 #### Optional Extensions
 
-* Use Heroku to host your app (you'll need to use a Postgres database)
 * Implement Twitter, Github, or Facebook OAuth login
+* Use HAML for your views
+* TDD using Rspec instead of Test::Unit
 
 ### Homework
 
