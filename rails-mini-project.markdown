@@ -5,7 +5,7 @@
 This week, we talked about
 
 * rails
-* database schema design (use the [online schema designer](http://ondras.zarovi.cz/sql/demo/))
+* database schemas (use the [online schema designer](http://ondras.zarovi.cz/sql/demo/))
 * authentication
 * authorization
 * git workflow
@@ -80,7 +80,12 @@ Create an app where an admin (let's say for example, Richard) can assign points 
 
 ### Homework
 
-Fork or clone the repository so that you and your original pair each have a separate copy. Finish implementing the features individually using TDD. Add the link to your personal repository to [this document](https://github.com/turingschool/ruby-submissions/blob/master/1503/06_mini_project.yml).
+Choose one of the following options:
+
+* finish implementing the project over the weekend with your pair
+* fork the repository so that you and your original pair each have a separate copy. Finish implementing the features individually using TDD. 
+
+In either situation, add the link to your project repository and Heroku URL to [this document](https://github.com/turingschool/ruby-submissions/blob/master/1508/rails-mini-project.yml).
 
 ### Resources
 
