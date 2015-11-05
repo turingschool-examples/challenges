@@ -57,7 +57,7 @@ Create an app where users can "favorite" gifs.
 
 #### Gifs
 
-* Admins can generate gifs by entering search terms in field and then clicking "generate gif". This should create a new gif in the database. This feature is not available to regular users.
+* Admins can generate gifs by entering a one-word search term in field and then clicking "generate gif". This should create a new gif in the database. This feature is not available to regular users.
 * Gifs should have a title and image_path. See above "Images" in project #1 for more info on implemeting images. 
 * Use the [GiphyApi](https://github.com/giphy/GiphyAPI) to generate gifs. 
 
@@ -71,7 +71,7 @@ Create an app where users can "favorite" gifs.
 
 #### Categories
 
-* Gifs belong to a category
+* Gifs belong to a category (category is the original word that was searched for by the admin). 
 * categories can be created and destroyed by a logged-in admin user (regular logged in users cannot create or destroy categories)
 * when a user types a new idea into the form, there is a [selection dropdown](http://guides.rubyonrails.org/form_helpers.html#option-tags-from-a-collection-of-arbitrary-objects) for choosing the correct category
 
