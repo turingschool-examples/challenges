@@ -35,6 +35,8 @@ contacts = finder.all_contributors
 puts contacts.join("\n")
 ```
 
+![Screenshot](okcugit_screenshot.png)
+
 ## Extensions
 
 * Write the results to a text file in ascending order by last name
