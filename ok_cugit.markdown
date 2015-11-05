@@ -67,6 +67,12 @@ Dir.chdir("/tmp")
 You will likely want to use this method to change into your
 newly cloned directories so you can run `git log`.
 
+Don't forget you can return to the previous (parent) directory with:
+
+```ruby
+Dir.chdir("..")
+```
+
 ## Extensions
 
 * Write the results to a text file in ascending order by last name
