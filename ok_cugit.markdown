@@ -37,6 +37,36 @@ puts contacts.join("\n")
 
 ![Screenshot](okcugit_screenshot.png)
 
+## Interacting with Git from Ruby
+
+To interact with git you'll likely need to use some "shell" commands from
+within your ruby script. Here are a couple that may be useful for you:
+
+1. Any commands within backticks in a ruby file will be run as system
+commands:
+
+```ruby
+current_dir = `pwd` #use pwd command to get current directory
+puts current_dir
+```
+
+We can use this to interact with git from our ruby programs. For example:
+
+```ruby
+git clone https://github.com/turingschool/challenges.git
+```
+
+2. `Dir.chdir` is a method in ruby for changing the current
+working directory on the system. (equivalent to running `cd` from
+the command line):
+
+```ruby
+Dir.chdir("/tmp")
+```
+
+You will likely want to use this method to change into your
+newly cloned directories so you can run `git log`.
+
 ## Extensions
 
 * Write the results to a text file in ascending order by last name
