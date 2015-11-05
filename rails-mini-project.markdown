@@ -77,7 +77,6 @@ Create an app where users can "favorite" gifs.
 
 * Gifs belong to a category (category is the original word that was searched for by the admin). 
 * categories can be created and destroyed by a logged-in admin user (regular logged in users cannot create or destroy categories)
-* when a user types a new idea into the form, there is a [selection dropdown](http://guides.rubyonrails.org/form_helpers.html#option-tags-from-a-collection-of-arbitrary-objects) for choosing the correct category
 
 #### Authentication and Authorization
 
