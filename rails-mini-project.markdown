@@ -12,15 +12,20 @@ This week, we talked about
 
 This afternoon, use these new skills to start adding the following features to a new Rails application. **TDD is not dead.**
 
+### Project Options
+
+* IdeaBox
+* GifGenerator
+* PointBox
+
 ### Project Option 1: IdeaBox
 
-Let's create an app to record your ideas. Host your app live on Heroku. 
+Let's create an app to record your ideas. Host your app live on Heroku. Users can create, edit/update, show, and destroy only their own ideas.
 
 #### Categories
 
 * ideas belong to a category
 * categories can be created and destroyed by a logged-in admin user (regular logged in users cannot create or destroy categories)
-* users can create, edit/update, show, and destroy only their own ideas
 * when a user types a new idea into the form, there is a [selection dropdown](http://guides.rubyonrails.org/form_helpers.html#option-tags-from-a-collection-of-arbitrary-objects) for choosing the correct category
 
 #### Images
@@ -46,7 +51,45 @@ The most simplistic way to implement images is to store a url to an online image
 * Use HAML for your views
 * TDD using Rspec instead of Test::Unit
 
-### Project Option 2: PointBox
+### Project Option 2: GifGenerator
+
+Create an app where users can "favorite" gifs. 
+
+#### Gifs
+
+* Gifs are created by logged-in administrators ONLY
+* Gifs should have a title and image filepath. See above "Images" in project #1 for more info on implemeting images. 
+
+#### Favoriting
+
+* Regular users can mark a gif as "favorite". 
+* Regular users can see a list of all of the gifs they've marked as favorites.
+* Regular users cannot delete a gif; they can only "unfavorite" it for themselves. 
+* Regular users should be able to see all gifs sorted by category.
+* Regular users should be able to see favorited gifs sorted by category. 
+
+#### Categories
+
+* Gifs belong to a category
+* categories can be created and destroyed by a logged-in admin user (regular logged in users cannot create or destroy categories)
+* when a user types a new idea into the form, there is a [selection dropdown](http://guides.rubyonrails.org/form_helpers.html#option-tags-from-a-collection-of-arbitrary-objects) for choosing the correct category
+
+#### Authentication and Authorization
+
+* users need to log in to see their favorited gifs
+* users can only see their own favorited gifs -- they should not be able to visit another user's page
+* users cannot create favorites for other users
+* users cannot create new categories -- only the admin can do that
+* users cannot create gifs -- only the admin can do that
+* visitors (non-registered users) can create user accounts
+
+#### Optional Extensions
+
+* Implement Twitter, Github, or Facebook OAuth login
+* Use HAML for your views
+* TDD using Rspec instead of Test::Unit
+
+### Project Option 3: PointBox
 
 Create an app where an admin (let's say for example, Richard) can assign points to users and users can redeem those points for rewards. Host your app live on Heroku. 
 
