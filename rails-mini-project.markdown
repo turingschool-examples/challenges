@@ -62,7 +62,7 @@ Create an app where users can "favorite" gifs.
 #### Gifs
 
 * Admins can generate gifs by entering a one-word search term in field and then clicking "generate gif". This should create a new gif in the database. This feature is not available to regular users.
-* Gifs should have a title and image_path. See above "Images" in project #1 for more info on implemeting images. 
+* Gifs should have an image_path. See above "Images" in project #1 for more info on implemeting images. 
 * Use the [GiphyApi](https://github.com/giphy/GiphyAPI) to generate gifs. 
 
 #### Favoriting
