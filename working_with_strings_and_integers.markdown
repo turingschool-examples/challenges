@@ -20,7 +20,7 @@ Use *only* the "string concatenation" technique to complete the following:
 3. What code can you write to output the string `"First Last"`?
 4. What code can you write to output the string `"Last First Last First"`?
 
-Then repeat A-E using only the "string interpolation" technique.
+Then repeat 1-4 using only the "string interpolation" technique.
 
 ### 2. Names
 
