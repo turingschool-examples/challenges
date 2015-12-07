@@ -47,8 +47,8 @@ What about this?
 * What kind of object does `Genre.all` return? 
 * How can you get a count of all of the Directors? 
 * How do you grab the first Film? What about the last? 
-* Can you select all films where the director_id is 4? Try `Film.where(...` or `Director.find(...`
-* What's the difference between the query above and `Film.find_by(director_id: 4)`?
+* Can you select all films where the director_id is 3? Try `Film.where(...` or `Director.find(...`
+* What's the difference between the query above and `Film.find_by(director_id: 3)`?
 * Can you select the genre with a specific id? Try `Genre.find(...`
 * What does `Director.find_or_create_by(name: "James Cameron")` do? What about `Director.find_or_create_by(name: "Mel Gibson")`?
 * Try calling `.to_sql` on the end of the query `Genre.where(name: "Romance").to_sql`. What happens?
