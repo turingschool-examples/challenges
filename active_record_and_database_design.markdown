@@ -60,6 +60,7 @@ What about this?
 * Create a route in your controller for `/directors/:id`. This should prepare an instance variable for the director `@director = Director.find(id)` and render a view with all films associated with that director. 
 * In this view, display the total gross box office sales for that director's films. Hint: Use the [ActiveRecord Calculations Documentation](http://guides.rubyonrails.org/active_record_querying.html#calculations)
 * Display the average gross box office sales for that director's films. Use the documentation linked above. 
+* I'm not judging, but you probably wrote these calculations right in your view. Can you extract these out to a class method in film so that you can call something more beautiful like `@director.films.total_sales`? (Yes, `total_sales` will be a class method on `Film`)
 
 #### Extension
 
