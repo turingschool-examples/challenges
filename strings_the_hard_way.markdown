@@ -16,24 +16,13 @@ length("pizza")
 => 5
 ```
 
-### Split
+### Upcase
 
-Take a string and return an array of strings which are "split"
-around any whitespace characters.
-
-```ruby
-split("Hello Dear Friends")
-=> ["Hello", "Dear", "Friends"]
-```
-
-#### With an arg
-
-Additionally, allow the user to provide an argument specifying around which
-character the string should be split:
+Capitalize all of the letters in a string:
 
 ```ruby
-split_with_arg("one,two,three", ",")
-=> ["one", "two", "three"]
+upcase("pizza")
+=> PIZZA
 ```
 
 ### sub
@@ -58,6 +47,27 @@ Similar to `sub`, but replace __all__ occurrences of the replacement string:
 gsub("dud", "d", "f")
 => "fuf"
 ```
+
+### Split
+
+Take a string and return an array of strings which are "split"
+around any whitespace characters.
+
+```ruby
+split("Hello Dear Friends")
+=> ["Hello", "Dear", "Friends"]
+```
+
+#### With an arg
+
+Additionally, allow the user to provide an argument specifying around which
+character the string should be split:
+
+```ruby
+split_with_arg("one,two,three", ",")
+=> ["one", "two", "three"]
+```
+
 
 ### Positional Substrings
 
