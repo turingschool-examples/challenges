@@ -69,5 +69,5 @@ What about this?
 ### 2) Traffic Spy
 
 * Read through Traffic Spy assignment 
-* Transfer project requirements to stories and insert into a project management tool like Waffle
+* Transfer project requirements to issues in your [Waffle.io](http://waffle.io). Tag them per iteration. 
 * Begin thinking about how to design your schema using the [schema designer](http://ondras.zarovi.cz/sql/demo/)
