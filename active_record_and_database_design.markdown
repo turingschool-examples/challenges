@@ -31,7 +31,7 @@ What does this do? What table is affected?
 
 ```
 >> genre = Genre.find(2)
->> genre.films.create(title: "Avengers: Age of Ultron", year: "2015", box_office_sales: 458991599, director_id: 3)
+>> genre.films.create(title: "Avengers: Age of Ultron", year: 2015, box_office_sales: 458991599, director_id: 3)
 ```
 
 What about this?
