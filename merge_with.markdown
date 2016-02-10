@@ -10,9 +10,9 @@ the same key then the second one will win. For example:
 => {:a=>2}
 ```
 
-However sometimes we'd like to perform a similar logic but specify
-a dynamic merging function: merge 2 hashes by summing the values of
-matching keys, etc.
+However sometimes we'd like to perform a merge using a customized process
+for combining overlapping values: merge 2 hashes by summing, concatenating,
+or subtracting the values of matching keys, etc.
 
 Let's implement a function to do this. Define your own method `merge_with`
 which takes 3 arguments:
