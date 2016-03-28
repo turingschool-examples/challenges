@@ -66,8 +66,8 @@ What about this?
 
 * Change out the sqlite database for a postgres database. 
 
-### 2) Traffic Spy
+### 2) RushHour
 
-* Read through Traffic Spy assignment 
+* Read through RushHour assignment 
 * Transfer project requirements to issues in your [Waffle.io](http://waffle.io). Tag them per iteration. 
 * Begin thinking about how to design your schema using the [schema designer](http://ondras.zarovi.cz/sql/demo/)
