@@ -14,13 +14,14 @@ This afternoon, use these new skills to start adding the following features to a
 
 ### Setting Expectations
 
-Use [this question guide](https://gist.github.com/rwarbelow/0fed3529495a814eabb1) to establish group norms. 
+Use [this question guide](https://gist.github.com/rwarbelow/0fed3529495a814eabb1) to establish group norms.
 
 ### Project Options
 
 * IdeaBox
 * GifGenerator
 * PointBox
+* Original Idea
 
 ### Project Option 1: IdeaBox
 
@@ -38,7 +39,7 @@ Let's create an app to record your ideas. Host your app live on Heroku. Users ca
 * an image can have many ideas and an idea can have many images
 * images can only be created by an admin user
 
-The most simplistic way to implement images is to store a url to an online image. If you're feeling fancy and want to upload your own images, check out [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) or [Paperclip](https://github.com/thoughtbot/paperclip). 
+The most simplistic way to implement images is to store a url to an online image. If you're feeling fancy and want to upload your own images, check out [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) or [Paperclip](https://github.com/thoughtbot/paperclip).
 
 #### Authentication and Authorization
 
@@ -53,29 +54,29 @@ The most simplistic way to implement images is to store a url to an online image
 
 * Implement Twitter, Github, or Facebook OAuth login
 * Use HAML for your views
-* TDD using Rspec instead of Test::Unit
+* TDD using RSpec instead of Test::Unit
 
 ### Project Option 2: GifGenerator
 
-Create an app where users can "favorite" gifs. 
+Create an app where users can "favorite" gifs.
 
 #### Gifs
 
 * Admins can generate gifs by entering a one-word search term in field and then clicking "generate gif". This should create a new gif in the database. This feature is not available to regular users.
-* Gifs should have an image_path. See above "Images" in project #1 for more info on implemeting images. 
-* Use the [GiphyApi](https://github.com/giphy/GiphyAPI) to generate gifs. 
+* Gifs should have an image_path. See above "Images" in project #1 for more info on implementing images.
+* Use the [GiphyApi](https://github.com/giphy/GiphyAPI) to generate gifs.
 
 #### Favoriting
 
-* Regular users can mark a gif as "favorite". 
+* Regular users can mark a gif as "favorite".
 * Regular users can see a list of all of the gifs they've marked as favorites.
-* Regular users cannot delete a gif; they can only "unfavorite" it for themselves. 
+* Regular users cannot delete a gif; they can only "unfavorite" it for themselves.
 * Regular users should be able to see all gifs sorted by category.
-* Regular users should be able to see favorited gifs sorted by category. 
+* Regular users should be able to see favorited gifs sorted by category.
 
 #### Categories
 
-* Gifs belong to a category (category is the original word that was searched for by the admin). 
+* Gifs belong to a category (category is the original word that was searched for by the admin).
 * categories can be created and destroyed by a logged-in admin user (regular logged in users cannot create or destroy categories)
 
 #### Authentication and Authorization
@@ -91,11 +92,11 @@ Create an app where users can "favorite" gifs.
 
 * Implement Twitter, Github, or Facebook OAuth login
 * Use HAML for your views
-* TDD using Rspec instead of Test::Unit
+* TDD using RSpec instead of Test::Unit
 
 ### Project Option 3: PointBox
 
-Create an app where an admin (let's say for example, Richard) can assign points to users and users can redeem those points for rewards. Host your app live on Heroku. 
+Create an app where an admin (let's say for example, Richard) can assign points to users and users can redeem those points for rewards. Host your app live on Heroku.
 
 #### Points
 
@@ -125,7 +126,30 @@ Create an app where an admin (let's say for example, Richard) can assign points 
 
 * Implement Twitter, Github, or Facebook OAuth login
 * Use HAML for your views
-* TDD using Rspec instead of Test::Unit
+* TDD using RSpec instead of Test::Unit
+
+### Option 4: Original Idea
+
+That's right. You are creative and I believe in you. Feel free to pitch an original idea for the mini-project.
+
+#### Must-Haves:
+
+* Deploy to Heroku
+* Authorization
+
+#### Things to Consider
+
+If you choose to do this option make sure you try to implement all the concepts we've touched over the last week. For example:
+
+* TDD - model and feature tests
+* CRUD
+* 1-1 and 1-many relationships
+* ReST-ful routes
+* Well structured relational database design
+* Rails helpers
+* Sessions, flashes and maybe cookies if you have a good use case for them.
+* Authentication
+* Authorization
 
 ### Over the weekend
 
@@ -137,4 +161,3 @@ Finish implementing the project over the weekend with your pair. Add the link to
 * [Carrierwave](https://github.com/carrierwaveuploader/carrierwave)
 * [Paperclip](https://github.com/thoughtbot/paperclip)
 * [Form Helpers in Rails](http://guides.rubyonrails.org/form_helpers.html)
-
