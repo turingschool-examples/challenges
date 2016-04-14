@@ -135,7 +135,7 @@ That's right. You are creative and I believe in you. Feel free to pitch an origi
 #### Must-Haves:
 
 * Deploy to Heroku
-* Authorization
+* Authentication/Authorization
 
 #### Things to Consider
 
