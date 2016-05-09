@@ -18,8 +18,6 @@ Remember that passing code is just the first step. The goal is to work towards a
 
 Have fun!
 
-
-
 ## Source
 
-Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial. [view source](http://pine.fm/LearnToProgram/?Chapter=06)
+This exercise is borrowed from Exercism, which in turn took inspiration from the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial. [view source](http://pine.fm/LearnToProgram/?Chapter=06)
