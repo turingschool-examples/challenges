@@ -1,7 +1,7 @@
 ## Refactoring Patterns
 
 For this assignment, we'll be reading selected sections
-from Jay Fields' book *[Refactoring: Ruby Edition]*(http://www.amazon.com/Refactoring-Edition-Addison-Wesley-Professional-Series/dp/0321984137).
+from Jay Fields' book [Refactoring: Ruby Edition](http://www.amazon.com/Refactoring-Edition-Addison-Wesley-Professional-Series/dp/0321984137).
 
 The content for this reading will be used in the
 [Refactoring Patterns](https://github.com/turingschool/lesson_plans/blob/master/ruby_01-object_oriented_programming_with_ruby/refactoring_patterns.markdown)
