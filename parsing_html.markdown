@@ -60,13 +60,13 @@ require 'open-uri'
 html = open('https://www.turing.io')
 doc  = Nokogiri::HTML(html)
 
-var1 = doc.css('.field-type-text-with-summary')
-var2 = doc.css('.field-type-text-with-summary p')
-var3 = doc.css('.field-type-text-with-summary p').text
+var1 = doc.css('.container')
+var2 = doc.css('.container p')
+var3 = doc.css('.container p').text
 ```
 
-What is the difference between `var1`, `var2`, and `var3`? What do '.mod-intro' and 
-'.mod-intro p' refer to? 
+What is the difference between `var1`, `var2`, and `var3`? What do '.container' and 
+'.container p' refer to? 
 
 ### Optional
 
