@@ -38,7 +38,7 @@ What about this?
 
 ```
 >> director = Director.first
->> film = Film.create(title: "Terminator 2: Judgment Day", year: 1991, box_office_sales: 204843350, genre_id: 2)
+>> film = Film.create(title: "Terminator 2: Judgement Day", year: 1991, box_office_sales: 204843350, genre_id: 2)
 >> director.films << film
 ```
 
