@@ -10,6 +10,19 @@ the closing brace comes in the opposite order of the opening.
 
 Write a validator that can determine the well-formed-ness of an input string.
 
+Here's a sample interaction pattern:
+
+```ruby
+v = StringValidator.new
+v.validate("()")
+# => true
+v.validate("([{}[]])")
+# => true
+v.validate("()[")
+# => false
+v.validate("([)]")
+# => false
+```
 
 Extension:
 
