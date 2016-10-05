@@ -65,3 +65,8 @@ What about this?
 #### Extension
 
 * Change out the sqlite database for a postgres database. 
+
+### 2) FilmFile and CRUD
+
+Add the CRUD functionality for films. A user should be able to see all the films, create a new film, see an individual film, update a film, and delete a film.
+
