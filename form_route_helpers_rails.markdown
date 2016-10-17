@@ -1,6 +1,6 @@
 ## Form and Route Helpers in Rails
 
-Clone [this repo](https://github.com/rwarbelow/form_playground) and run the necessary commands to get the application setup.
+Clone [this repo](https://github.com/Carmer/form_playground) and run the necessary commands to get the application setup.
 
 ### Setup
 
@@ -9,23 +9,8 @@ Clone [this repo](https://github.com/rwarbelow/form_playground) and run the nece
 3. Now run the rake command that runs this seed file. 
 4. Now, hop back into your Rails console and verify that your seed file ran and you have articles in your development database. 
 
-
 ### Experimenting with Route Helpers
-
-* Start your [Rails server](http://guides.rubyonrails.org/command_line.html#rails-server). 
-* Navigate to the path that should show all the articles (`/articles`). 
-* Open the view that's being rendered from this path in your text editor. If you're not sure where that is, check out your `routes.rb` and follow the trail. Right now, the code to make each individual article link looks like this:
-
-```
-  <a href="/articles/<%= article.id %>"><%= article.title %></a> <br>
-```
-
-* This should look pretty similar to how you created links in `TaskManager` with Sinatra.
-
-#### Your Challenge 
-
-* Replace this bit of code with a Rails route helper that provides the same behavior. Try using [link_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to), and check the Rails Guides for Path and URL Helpers [here](http://guides.rubyonrails.org/routing.html#path-and-url-helpers). This might also be a good opportunity to practice your Stack Overflow skills in trying to find examples and/or explanations :) 
-* Replace the "Make a new article" link with another Rails route helper that leads to the form?
+* Replace the "Make a new article" link with a Rails route helper that leads to the form?
 * Add a link (using a route helper) on the `show.html.erb` page so that a user can return to the articles index? 
 * How is the prefix section from the output of running `rake routes` connected with route helpers? 
 
