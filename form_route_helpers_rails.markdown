@@ -1,6 +1,6 @@
 ## Form and Route Helpers in Rails
 
-Clone [this repo](https://github.com/Carmer/form_playground) and run the necessary commands to get the application setup.
+Clone [this repo](https://github.com/rwarbelow/form_playground) and run the necessary commands to get the application setup.
 
 ### Setup
 
