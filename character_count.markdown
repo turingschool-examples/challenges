@@ -20,7 +20,7 @@ Examples:
 ```
 
 
-  **analyze I really want to work for Wingspan**
+  **analyze "I really want to work for Wingspan"**
 ```
    : 6
   o: 3
