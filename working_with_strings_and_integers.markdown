@@ -1,10 +1,10 @@
 # Working with Strings and Integers
 
+
+### 1. First & Last
 Complete the following exercises to solidify your understandings of strings and integers.
 
 ## Just Strings
-
-### 1. First & Last
 
 If you have the strings `"First"` and `"Last"` in the following variables:
 
@@ -16,9 +16,24 @@ l = "Last"
 Use *only* the "string concatenation" technique to complete the following:
 
 1. What code can you write to output the string `"FirstLast"`?
+```ruby
+p f + l
+```
 2. What code can you write to output the string `"LastFirst"`?
+
+```ruby
+p l + f
+```
 3. What code can you write to output the string `"First Last"`?
+
+```ruby
+p f + " " + l
+```
 4. What code can you write to output the string `"Last First Last First"`?
+
+```ruby
+p l + " " + f + " " + l + " " + f
+```
 
 Then repeat 1-4 using only the "string interpolation" technique.
 
