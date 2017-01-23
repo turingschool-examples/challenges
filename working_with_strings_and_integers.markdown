@@ -20,17 +20,14 @@ Use *only* the "string concatenation" technique to complete the following:
 p f + l
 ```
 2. What code can you write to output the string `"LastFirst"`?
-
 ```ruby
 p l + f
 ```
 3. What code can you write to output the string `"First Last"`?
-
 ```ruby
 p f + " " + l
 ```
 4. What code can you write to output the string `"Last First Last First"`?
-
 ```ruby
 p l + " " + f + " " + l + " " + f
 ```
