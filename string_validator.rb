@@ -1,4 +1,6 @@
 class StringValidator
+  attr_accessor :refs
+
   def initialize
     @refs = {")":"(","}":"{","]":"["}
   end
@@ -17,5 +19,14 @@ class StringValidator
     end
     return true if stack.empty?
     return false
+  end
+
+  def self.well_formed?(s, a)
+    v = StringValidator.new
+    v.refs = {}
+    a.each do |k,v|
+      @refs[k.to_sym] = v
+    end
+    v.validate(s)
   end
 end

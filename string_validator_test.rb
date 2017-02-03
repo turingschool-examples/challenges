@@ -35,4 +35,14 @@ class TestStringValidator < Minitest::Test
     result = @v.validate("(FF[asd)$!@%]")
     assert_equal result, false
   end
+
+  def test_well_formed?
+    result = StringValidator.well_formed?("({})", [["(",")"],["{","}"]])
+    assert_equal result, true
+  end
+
+  def test_well_formed_weird_characters
+    result = StringValidator.well_formed?("0{p)", [["0",")"],["{","p"]])
+    assert_equal result, true
+  end
 end
