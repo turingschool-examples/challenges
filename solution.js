@@ -24,7 +24,6 @@ class StringValidator{
 
       for(var j = 0 + 1; j < stringArray.length; j++){
         var newItem = stringArray[j];
-        if(current == "(" && newItem == ")")
         if(current == "(" && newItem == ")"){ pcount += 1; }
         if(current == "[" && newItem == "]"){ bcount += 1; }
         if(current == "{" && newItem == "}"){ hcount += 1; }
