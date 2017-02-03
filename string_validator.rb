@@ -31,8 +31,8 @@ class StringValidator
     return answer
   end
 
-  def pairs_match?(input)
-    input.chars.all? do |token|
+  def pairs_match?(target)
+    target.chars.all? do |token|
       if left?(token)
         token_stack.push(token)
       elsif right?(token)
