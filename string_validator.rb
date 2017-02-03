@@ -1,11 +1,11 @@
 require 'pry'
 class StringValidator
 	def validate(string)
+		original = string.split('')
 		arr = string.split('')
 		length = arr.length
 
-		(length - 1 ).times do 
-			in_question = arr.shift
+		original.each do |in_question| 
 			case in_question
 			when '('
 				pair = ')'
@@ -13,8 +13,14 @@ class StringValidator
 				pair = ']'
 			when '{'
 				pair = '}'
+			when '}'
+				pair = '{'
+			when ']'
+				pair = '['
+			when ')'
+				pair = '('
 			end
-			return puts false if !arr.include?(pair)
+			return puts false if !original.include?(pair)
 		end
 		return puts true
 	end
