@@ -1,15 +1,17 @@
 class StringValidator
+  OPEN_TO_CLOSE = {"(" => ")", "[" => "]", "{" => "}"}
+  attr_reader :opening, :closing
 
-  HASH = {"(" => ")", "[" => "]", "{" => "}"}
+
+  def initialize
+    @opening = []
+    @closing = []
+  end
 
   def validate(input)
-    opening = []
-    closing = []
-
-    chars = input.chars
-    chars.each do |char|
-      opening << char if HASH.keys.include?(char)
-      closing << HASH[char] if HASH[char]
+    input.chars.each do |char|
+      opening << char if OPEN_TO_CLOSE.keys.include?(char)
+      closing << OPEN_TO_CLOSE[char] if OPEN_TO_CLOSE[char]
     end
     opening.length == closing.length
   end

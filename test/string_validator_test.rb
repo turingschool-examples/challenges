@@ -19,4 +19,9 @@ class StringValidatorTest < Minitest::Test
     v = StringValidator.new
     assert_equal true, v.validate("([{}[]])")
   end
+
+  def test_it_does_not_validate_wrong_formed_brackets
+    v = StringValidator.new
+    assert_equal true, v.validate("([)]")
+  end
 end
