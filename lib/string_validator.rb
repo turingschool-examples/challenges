@@ -1,7 +1,7 @@
 class StringValidator
-  OPEN_TO_CLOSE = {"(" => ")", "[" => "]", "{" => "}"}
   attr_reader :opening, :closing
 
+  OPEN_TO_CLOSE = {"(" => ")", "[" => "]", "{" => "}"}
 
   def initialize
     @opening = []
