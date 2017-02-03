@@ -1,4 +1,10 @@
 class StringValidator
+  attr_reader :token_stack
+
+  def initialize
+    @token_stack = []
+  end
+
   def pairings
     {
       "(" => ")",
@@ -11,9 +17,28 @@ class StringValidator
     pairings[t1] == t2
   end
 
+  def left?(token)
+    pairings.keys.include?(token)
+  end
+
+  def right?(token)
+    pairings.values.include?(token)
+  end
+
   def validate(target)
-    true if target.empty?
-    tokens = target.chars
-    matched_pair?(tokens[0], tokens[1])
+    answer = pairs_match?(target) && token_stack.empty?
+    token_stack.clear
+    return answer
+  end
+
+  def pairs_match?(input)
+    input.chars.all? do |token|
+      if left?(token)
+        token_stack.push(token)
+      elsif right?(token)
+        left = token_stack.pop
+        matched_pair?(left, token)
+      end
+    end
   end
 end
