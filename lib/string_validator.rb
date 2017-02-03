@@ -1,11 +1,16 @@
 class StringValidator
 
-  OPEN_TO_CLOSE = {"(" => ")", "[" => "]", "{" => "}"}
+  HASH = {"(" => ")", "[" => "]", "{" => "}"}
 
   def validate(input)
-    # require 'pry'; binding.pry
-    # input.include?("[") && input.include?("]")
+    opening = []
+    closing = []
+
     chars = input.chars
-    chars.include?(OPEN_TO_CLOSE[chars.first])
+    chars.each do |char|
+      opening << char if HASH.keys.include?(char)
+      closing << HASH[char] if HASH[char]
+    end
+    opening.length == closing.length
   end
 end
