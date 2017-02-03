@@ -4,7 +4,7 @@ class StringValidator
 		arr = string.split('')
 		length = arr.length
 
-		(length).times do 
+		(length - 1 ).times do 
 			in_question = arr.shift
 			case in_question
 			when '('
@@ -14,9 +14,9 @@ class StringValidator
 			when '{'
 				pair = '}'
 			end
-			return false if !arr.include?(pair)
+			return puts false if !arr.include?(pair)
 		end
-		return true
+		return puts true
 	end
 end
 
