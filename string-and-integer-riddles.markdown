@@ -18,7 +18,7 @@ happens if it is a number?
 * How can I tell if a word is a palindrome? (The word is the same forwards and
   backwards.)
 
-* How can I tell if a sentence is the same forwards and backwards?
+* How can I tell if a sentence is the same forwards and backwards? (ignoring spaces and punctuation)
 
 * How can I replace an occurrence of a single character in a string with another
 character?

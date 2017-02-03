@@ -1,8 +1,8 @@
 # ActiveRecord and Database Design
 
-### 1) TaskManager and ActiveRecord (~1-2 hours)
+### 1) FilmFile and ActiveRecord (~1-2 hours)
 
-1) Using a migration, add a new table to task manager for statuses. The only attribute of a status is a `name`. A task belongs to a status and a status can have many tasks. Don't forget to add a foreign key of status_id to the task table. 
+1) Using a migration, add a new table to Film File for directors. The only attribute of a director is a `name`. A film belongs to a director and a director can have many films. Don't forget to add a foreign key of director_id to the films table. 
 
 2) Run your migration. Check to see that `schema.rb` was updated properly. 
 
@@ -15,57 +15,58 @@ $ tux
 Tux gives you an interactive console for your app. Go ahead and add some data to your database:
 
 ```
->> User.create(name: "Josh")
->> User.create(name: "Rachel")
->> User.create(name: "Jeff")
->> Status.create(name: "Completed")
->> Status.create(name: "In progress")
->> Status.create(name: "Ready")
->> Status.create(name: "Someday")
->> Task.create(title: "Wash the hamster", description: "insert clever description here", user_id: 1, status_id: 1)
->> Task.create(title: "Very important thing", description: "insert clever description here", user_id: 2, status_id: 1)
->> Task.create(title: "Wake up", description: "insert clever description here", user_id: 2, status_id: 2)
->> Task.create(title: "Make a task manager app", description: "insert clever description here", user_id: 1, status_id: 4)
->> Task.create(title: "Hire detective", description: "insert clever description here", user_id: 3, status_id: 3)
+james = Director.create(name: "James Cameron")
+colin = Director.create(name: "Colin Trevorrow")
+joss = Director.create(name: "Joss Whedon")
+christopher = Director.create(name: "Christopher Nolan")
+george = Director.create(name: "George Lucas")
+lee = Director.create(name: "Lee Unkrich")
 ```
+
+Associate the existing films in your database with their respective directors. If you don't know any movie directors (like me), check out [IMDB All-Time Box Office: USA](http://www.imdb.com/boxoffice/alltimegross). 
 
 #### Experimenting with Built-in ActiveRecord Methods
 
 What does this do? What table is affected? 
 
 ```
->> user = User.first
->> user.tasks.create(title: "Play tennis", description: "double-handed backhand", status_id: 2)
+>> genre = Genre.find(2)
+>> genre.films.create(title: "Avengers: Age of Ultron", year: 2015, box_office_sales: 458991599, director_id: 3)
 ```
 
 What about this?
 
 ```
->> status = Status.first
->> task = Task.create(title: "Learn ActiveRecord", description: "so fun", user_id: 2)
->> status.tasks << task
+>> director = Director.first
+>> film = Film.create(title: "Terminator 2: Judgment Day", year: 1991, box_office_sales: 204843350, genre_id: 2)
+>> director.films << film
 ```
 
-* What's the difference between `User.new(name: "Bob")` and `User.create(name: "Bob")`? Play around with Tux and your development environment (use shotgun to see your web interface) to investigate the difference. How does the `save` method play into the relationship between `new` and `create`? What about the `new_record?` method? You may also want to do some Googling. 
+* What's the difference between `Genre.new(name: "Anime")` and `Genre.create(name: "Anime")`? Play around with Tux and your development environment (use shotgun to see your web interface) to investigate the difference. How does the `save` method play into the relationship between `new` and `create`? What about the `new_record?` method? You may also want to do some Googling. 
 
-* What kind of object does `Task.all` return? 
-* How can you get a count of all of the Users? 
-* How do you grab the first Task? What about the last? 
-* Can you select all tasks where the user_id is 2? Try `Task.where(...`
-* What's the difference between the query above and `Task.find_by(user_id: 2)`?
-* Can you select the status with a specific id? Try `Status.find(...`
-* What does `Task.find_or_create_by(title: "Learn ActiveRecord")` do? What about `Task.find_or_create_by(title: "Learn Sequel")`?
-* Try calling `.to_sql` on the end of any query (like `Task.where(title: "Play tennis").to_sql`). What happens?
-* What does `User.pluck(:name)` do? Can you generate a query to return only the task titles? 
+* What kind of object does `Genre.all` return? 
+* How can you get a count of all of the Directors? 
+* How do you grab the first Film? What about the last? 
+* Can you select all films where the director_id is 3? Try `Film.where(...` or `Director.find(...`
+* What's the difference between the query above and `Film.find_by(director_id: 3)`?
+* Can you select the genre with a specific id? Try `Genre.find(...`
+* What does `Director.find_or_create_by(name: "James Cameron")` do? What about `Director.find_or_create_by(name: "Mel Gibson")`?
+* Try calling `.to_sql` on the end of the query `Genre.where(name: "Romance").to_sql`. What happens?
+* What does `Film.pluck(:title)` do? Can you generate a query to return only the task titles? 
 * Go through the [ActiveRecord docs](http://guides.rubyonrails.org/active_record_querying.html) and find three other methods to try out. 
+
+#### Calculations
+
+* Create a route in your controller for `/directors/:id`. This should prepare an instance variable for the director `@director = Director.find(id)` and render a view with all films associated with that director. 
+* In this view, display the total gross box office sales for that director's films. Hint: Use the [ActiveRecord Calculations Documentation](http://guides.rubyonrails.org/active_record_querying.html#calculations)
+* Display the average gross box office sales for that director's films. Use the documentation linked above. 
+* I'm not judging, but you probably wrote these calculations right in your view. Can you extract these out to a class method in film so that you can call something more beautiful like `@director.films.total_sales`? (Yes, `total_sales` will be a class method on `Film`. Any class methods defined in a class that inherits from `ActiveRecord::Base` are also available on associations.)
 
 #### Extension
 
-* Create a navbar in your layout that includes clickable links for each status. The link should go to a `/statuses/:id` route that renders a view with all tasks associated with that status. 
 * Change out the sqlite database for a postgres database. 
 
-### 2) Traffic Spy Project Processing and Schema Design
+### 2) FilmFile and CRUD
 
-Carefully read through the [Traffic Spy](https://github.com/JumpstartLab/curriculum/blob/master/source/projects/traffic_spy.markdown) specifications. Play around with cURL.
+Add the CRUD functionality for films. A user should be able to see all the films, create a new film, see an individual film, update a film, and delete a film.
 
-With your Traffic Spy team, design a database schema using [this online tool](http://ondras.zarovi.cz/sql/demo/). Be sure to normalize the database and include foreign keys to show relationships between tables. 

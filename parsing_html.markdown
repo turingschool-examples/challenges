@@ -10,7 +10,7 @@ How can we use Ruby to interact with, filter, or traverse HTML? Let's play aroun
 require 'nokogiri'
 require 'open-uri'
 
-html = open('http://turing.io')
+html = open('https://www.turing.io')
 doc  = Nokogiri::HTML(html)
 ```
 
@@ -22,7 +22,7 @@ What is `doc`? What does it represent? What information does it include?
 require 'nokogiri'
 require 'open-uri'
 
-html = open('http://turing.io')
+html = open('https://www.turing.io')
 doc  = Nokogiri::HTML(html)
 
 images = doc.css('img')
@@ -42,7 +42,7 @@ end
 require 'nokogiri'
 require 'open-uri'
 
-html = open('http://turing.io')
+html = open('https://www.turing.io')
 doc  = Nokogiri::HTML(html)
 
 div   = doc.at_css('div')
@@ -57,16 +57,16 @@ What is the difference between `.at_css` and `.css`?
 require 'nokogiri'
 require 'open-uri'
 
-html = open('http://turing.io')
+html = open('https://www.turing.io')
 doc  = Nokogiri::HTML(html)
 
-var1 = doc.css('.mod-intro')
-var2 = doc.css('.mod-intro p')
-var3 = doc.css('.mod-intro p').text
+var1 = doc.css('.container')
+var2 = doc.css('.container p')
+var3 = doc.css('.container p').text
 ```
 
-What is the difference between `var1`, `var2`, and `var3`? What do '.mod-intro' and 
-'.mod-intro p' refer to? 
+What is the difference between `var1`, `var2`, and `var3`? What do '.container' and 
+'.container p' refer to? 
 
 ### Optional
 

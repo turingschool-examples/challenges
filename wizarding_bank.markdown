@@ -114,7 +114,7 @@ Total Cash: 750 galleons
 
 ### Level 2
 
-In this new financial climate, there are now comapnies offering wizards and witches lines of credit.
+In this new financial climate, there are now companies offering wizards and witches lines of credit.
 
 * There should be a Credit class, and each Credit should have a unique name. `amex = Credit.new("AMEX")`
 * When you open a line of credit, you pass it a person, a credit limit and an interest rate. `amex.open_credit(person1, 100, 0.05)`

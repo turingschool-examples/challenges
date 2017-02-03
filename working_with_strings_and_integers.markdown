@@ -20,7 +20,7 @@ Use *only* the "string concatenation" technique to complete the following:
 3. What code can you write to output the string `"First Last"`?
 4. What code can you write to output the string `"Last First Last First"`?
 
-Then repeat A-E using only the "string interpolation" technique.
+Then repeat 1-4 using only the "string interpolation" technique.
 
 ### 2. Names
 
@@ -31,9 +31,9 @@ name_1 = "Megan Smith"
 name_2 = "Todd Park"
 ```
 
-A. Can you come up with *two* ways to output just the fragment `"Megan"` from `name_1`?
-B. Would either of your techniques from A would work to output `"Todd"` from `name_2`? Why or why not?
-C. Write code that can output the initials of `name_2`.
+1. Can you come up with *two* ways to output just the fragment `"Megan"` from `name_1`?
+2. Would either of your techniques from A would work to output `"Todd"` from `name_2`? Why or why not?
+3. Write code that can output the initials of `name_2`.
 
 ## Just Integers
 
