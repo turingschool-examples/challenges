@@ -7,17 +7,13 @@ class StringValidator
     }
   end
 
+  def matched_pair?(t1, t2)
+    pairings[t1] == t2
+  end
+
   def validate(target)
-    # consider just "()" and ")("
-    if target.length > 0
-      tokens = target.chars
-      if pairings[tokens[0]] == tokens[1]
-        true
-      else
-        false
-      end
-    else
-      true
-    end
+    true if target.empty?
+    tokens = target.chars
+    matched_pair?(tokens[0], tokens[1])
   end
 end
