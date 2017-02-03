@@ -21,4 +21,13 @@ class StringValidatorTest < Minitest::Test
     refute sv.validate(")(")
   end
 
+  def test_single_square_brackets_are_valid
+    sv = StringValidator.new
+    assert sv.validate("[]")
+  end
+
+  def test_single_curly_brackets_are_valid
+    sv = StringValidator.new
+    assert sv.validate("{}")
+  end
 end
