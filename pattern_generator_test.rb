@@ -30,4 +30,16 @@ class PatternGeneratorTest < Minitest::Test
 
     assert_equal result[:count], 26
   end
+
+  def test_two_character_number_combination_patterns_count
+    result = @pg.generate_serial('NN')
+
+    assert_equal result[:count], 81
+  end
+
+  def test_two_character_number_combination_patterns
+    result = @pg.generate_serial('NN')
+
+    assert_equal result[:patterns], ['01','02','03','04']
+  end
 end
