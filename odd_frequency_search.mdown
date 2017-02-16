@@ -1,0 +1,18 @@
+# Combing for Odd Frequency
+
+We have a array of numbers. The list contains multiple copies of every number in it, and every number is contained in it an even number of times.
+
+Except one.
+
+## Challenge
+
+Write a method, function, or program which, given such an array, finds the number that appears an odd number of times.
+
+## Limitations
+
+* The array is read-only. Do not modify it.
+* The code you write should be O(n), or time-scale to the length of the array.
+* The code you write should have a memory usage of O(k); it should not scale with either the length of the array or the number of unique integers in it.
+
+# Solutions
+
