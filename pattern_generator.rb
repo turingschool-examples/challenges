@@ -1,3 +1,5 @@
+require 'pry'
+
 class PatternGenerator
 
   def self.generate_serial(pattern)
@@ -12,6 +14,9 @@ class PatternGenerator
     all_patterns = []
     pattern.split.each do |letter|
       if pattern == 'N'
+        number_library.each do |number|
+          all_patterns << number
+        end
         #do some crazy building here
       elsif pattern == 'X'
         #do some more crazy building here
@@ -20,9 +25,11 @@ class PatternGenerator
   end
 
   def letter_library
+    ('A'..'Z').to_a
   end
 
   def number_library
+    ['0','1','2','3','4','5','6','7','8','9']
   end
 
 end
