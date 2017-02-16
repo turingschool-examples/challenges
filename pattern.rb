@@ -6,4 +6,10 @@ class PatternMatcher
     numbers[selector]
   end
   
+  def random_letter
+    letters = ("A".."Z").to_a
+    selector = rand(25)
+    letters[selector]
+  end
+  
 end

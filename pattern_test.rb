@@ -15,5 +15,10 @@ class PatternMatcherTest < Minitest::Test
     number = @p.random_number
     assert_equal Fixnum, number.class
   end
+  
+  def test_that_random_letters_are_sort_of_generated
+    letter = @p.random_letter
+    assert_equal String, letter.class
+  end
 
 end
