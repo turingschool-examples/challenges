@@ -1,6 +1,7 @@
 require './pattern'
 require 'minitest/autorun'
 require 'minitest/pride'
+require 'pry'
 
 class PatternMatcherTest < Minitest::Test
   def setup
@@ -25,7 +26,7 @@ class PatternMatcherTest < Minitest::Test
     serial = @p.serial_generator("X")
     refute_equal Fixnum, serial[0].class
   end
-
+  
   def test_that_the_matcher_outputs_the_right_thing_for_N
     serial = @p.serial_generator("N")
     assert_equal Fixnum, serial[0].class
@@ -60,10 +61,10 @@ class PatternMatcherTest < Minitest::Test
     refute_equal Fixnum, serial[3].class
     assert_equal Fixnum, serial[4].class
   end
-  
-  def test_that_serial_creator_does_a_thing
-    whoa = @p.serial_creator("NNXNX")
-    assert_equal Array, whoa.class
+    
+  def test_that_serial_creator_creates_the_right_number_of_things
+    all_possible_combos = @p.serial_creator("XXNXN")
+    assert_equal 1757600, all_possible_combos.count
   end
   
   

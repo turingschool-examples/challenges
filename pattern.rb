@@ -1,19 +1,19 @@
+require 'securerandom'
 require 'pry'
 
 class PatternMatcher
-  attr_reader :serial
   
   def initialize
     @serial_bank = []
   end
   
   def serial_creator(pattern)
-    result = serial_generator(pattern).join
-    if @serial_bank.include?(result) == false
-      @serial_bank.push(result)
-    else
-      serial_creator(pattern)
+    threads = []
+    while @serial_bank.count <= 1757600
+      result = serial_generator(pattern)
+      @serial_bank.push(result.join).uniq!
     end
+    @serial_bank
   end
   
   def serial_generator(pattern)
@@ -23,8 +23,6 @@ class PatternMatcher
         @serial.push(random_letter)
       elsif character == "N"
         @serial.push(random_number)
-      else
-        puts "Error."
       end
       @serial
     end
@@ -32,15 +30,11 @@ class PatternMatcher
   end
   
   def random_number
-    numbers = (0..9).to_a
-    selector = rand(8)
-    numbers[selector]
+    number = SecureRandom.random_number(0..9)
   end
   
   def random_letter
-    letters = ("A".."Z").to_a
-    selector = rand(25)
-    letters[selector]
+    letter = ("A".."Z").to_a.sample
   end
   
 end
