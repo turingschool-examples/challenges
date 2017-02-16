@@ -31,4 +31,35 @@ class PatternMatcherTest < Minitest::Test
     assert_equal Fixnum, serial[0].class
   end
   
+  def test_that_the_matcher_outputs_the_right_thing_for_NX
+    serial = @p.serial_generator("NX")
+    assert_equal Fixnum, serial[0].class
+    refute_equal Fixnum, serial[1].class
+  end
+
+  def test_that_the_matcher_outputs_the_right_thing_for_NXN
+    serial = @p.serial_generator("NXN")
+    assert_equal Fixnum, serial[0].class
+    refute_equal Fixnum, serial[1].class
+    assert_equal Fixnum, serial[2].class
+  end
+
+  def test_that_the_matcher_outputs_the_right_thing_for_NXNX
+    serial = @p.serial_generator("NXNX")
+    assert_equal Fixnum, serial[0].class
+    refute_equal Fixnum, serial[1].class
+    assert_equal Fixnum, serial[2].class
+    refute_equal Fixnum, serial[3].class
+  end
+
+  def test_that_the_matcher_outputs_the_right_thing_for_NXNXN
+    serial = @p.serial_generator("NXNXN")
+    assert_equal Fixnum, serial[0].class
+    refute_equal Fixnum, serial[1].class
+    assert_equal Fixnum, serial[2].class
+    refute_equal Fixnum, serial[3].class
+    assert_equal Fixnum, serial[4].class
+  end
+  
+  
 end
