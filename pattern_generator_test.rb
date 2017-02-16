@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require 'minitest/pride'
 require './pattern_generator'
 
 class PatternGeneratorTest < Minitest::Test
