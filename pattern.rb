@@ -3,6 +3,19 @@ require 'pry'
 class PatternMatcher
   attr_reader :serial
   
+  def initialize
+    @serial_bank = []
+  end
+  
+  def serial_creator(pattern)
+    result = serial_generator(pattern).join
+    if @serial_bank.include?(result) == false
+      @serial_bank.push(result)
+    else
+      serial_creator(pattern)
+    end
+  end
+  
   def serial_generator(pattern)
     @serial = []
     pattern.upcase.chars.each do |character|

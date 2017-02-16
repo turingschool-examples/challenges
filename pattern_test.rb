@@ -61,5 +61,10 @@ class PatternMatcherTest < Minitest::Test
     assert_equal Fixnum, serial[4].class
   end
   
+  def test_that_serial_creator_does_a_thing
+    whoa = @p.serial_creator("NNXNX")
+    assert_equal Array, whoa.class
+  end
+  
   
 end
