@@ -5,7 +5,7 @@ class PatternGenerator
   end
 
   def new_pattern
-    "XXNXN"
+    "XX2X2"
   end
 
 end
