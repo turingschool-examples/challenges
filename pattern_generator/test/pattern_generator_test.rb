@@ -8,11 +8,10 @@ class PatternGeneratorTest < Minitest::Test
   def set_up
     @letters = {"A"=> true, "B"=> true, "C"=> true, "D"=> true,
               "E"=> true, "F"=> true, "G"=> true, "H"=> true,
-              "I"=> true, "J"=> true, "K"=> true, "L"=> true,
-              "M"=> true, "N"=> true, "O"=> true, "P"=> true,
-              "Q"=> true, "R"=> true, "S"=> true, "T"=> true,
-              "U"=> true, "V"=> true, "W"=> true, "X" => true,
-              "Y"=> true, "Z"=> true
+              "J"=> true, "K"=> true, "L"=> true, "M"=> true,
+              "N"=> true, "P"=> true, "Q"=> true, "R"=> true,
+              "S"=> true, "T"=> true, "U"=> true, "V"=> true,
+              "W"=> true, "X" => true, "Y"=> true, "Z"=> true
                }
     @numbers = {"2" => true, "3" => true, "4" => true, "5" => true,
                 "6" => true, "7" => true, "8" => true, "9" => true,
@@ -49,6 +48,33 @@ class PatternGeneratorTest < Minitest::Test
 
     assert @numbers[pattern[2]]
   end
+
+  def test_the_fourth_char_is_a_capital_letter
+    set_up
+    pattern_generator = PatternGenerator.new
+    pattern = pattern_generator.new_pattern
+
+    assert @letters[pattern[3]]
+  end
+
+  def test_the_fifth_char_is_a_number
+    set_up
+    pattern_generator = PatternGenerator.new
+    pattern = pattern_generator.new_pattern
+
+    assert @numbers[pattern[4]]
+  end
+
+  def test_two_patterns_are_not_the_same
+    set_up
+    pattern_generator = PatternGenerator.new
+    pattern_1 = pattern_generator.new_pattern
+    pattern_2 = pattern_generator.new_pattern
+
+    refute pattern_1 == pattern_2
+  end
+
+
 
 
 end
