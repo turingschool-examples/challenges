@@ -30,7 +30,7 @@ class Generator
   end
 
   def all_combinations(pattern)
-    combos = LETTERS.repeated_permutation(pattern.length).to_a
+    LETTERS.repeated_permutation(pattern.length).to_a
   end
 
   def combination_count(pattern)
