@@ -18,9 +18,9 @@ Given a generated serial number, return true or false based on whether or not th
 ```
 pg = PatternGenerator.new
 pattern = ".#."
-pg.verify("A3B")
+pg.verify("A3B", pattern)
 # => true
-pg.verify("AAB")
+pg.verify("AAB", pattern)
 # => false
 ```
 
@@ -31,9 +31,9 @@ Given a specific pattern, assuming that incrementing happens from right to left 
 ```
 pg = PatternGenerator.new
 pattern = ".#."
-pg.generate(0)
+pg.generate(0, pattern)
 # => "A0A"
-pg.generate(27)
+pg.generate(27, pattern)
 # => "A1B"
 ```
 
@@ -44,6 +44,6 @@ Given a specific pattern, determine how many total numbers are in the set:
 ```
 pg = PatternGenerator.new
 pattern = ".#."
-pg.total_available
+pg.total_available(pattern)
 # => 6760
 ```
