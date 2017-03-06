@@ -1,14 +1,49 @@
 # Pattern Generator
 
-We want to generate serial numbers for our products as they roll off the manufacturing line. Patterns for the
-numbers are five characters like `XXNXN` where `X` stands for an uppercase letter A-Z and `N` stands for a digit 0-9.
+We want to generate serial numbers for each of our products as they roll off the manufacturing line. It's important that the patterns of the serial numbers are tightly defined.
 
-Write a program which, given a pattern like `XXNXN`, can both:
+The patterns follow these rules:
 
-* generate all possible serial numbers for that pattern
-* report out how many numbers were generated.
+* They are made up of at least 5 characters and max 20 characters
+* A `.` in a pattern represents a place that can be filled with a capital letter A-Z
+* A `#` in a pattern represents a place that can be filled with a number 0-9
+* Any letter or number in the pattern is a "literal" left in the output
 
-## Extensions
+Write a program which can:
 
-* Can you also support patterns of any length?
-* Customers often confuse `0` and `O`, `I` and `1`. Let's omit all four of those symbols from the generator.
+## Part 1: Verify Pattern Compliance
+
+Given a generated serial number, return true or false based on whether or not the input matches the pattern:
+
+```
+pg = PatternGenerator.new
+pattern = ".#."
+pg.verify("A3B")
+# => true
+pg.verify("AAB")
+# => false
+```
+
+## Part 2: Generate The Nth Value In the Pattern
+
+Given a specific pattern, assuming that incrementing happens from right to left (like normal numbers), generate the Nth value in the sequence:
+
+```
+pg = PatternGenerator.new
+pattern = ".#."
+pg.generate(0)
+# => "A0A"
+pg.generate(27)
+# => "A1B"
+```
+
+## Part 3: Possibilities
+
+Given a specific pattern, determine how many total numbers are in the set:
+
+```
+pg = PatternGenerator.new
+pattern = ".#."
+pg.total_available
+# => 6760
+```
