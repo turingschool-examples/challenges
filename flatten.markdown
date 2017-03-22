@@ -11,19 +11,6 @@ arrays into the outer array like this:
 The object of this exercise is to recreate the functionality of the
 `flatten` method that we have in Ruby's Array class.
 
-## Without Objects
-
-Write code that works like this:
-
-```ruby
-> a = [[1,2],[3,[4,5]]]
-# Your code here
-> a
-=> [1, 2, 3, 4, 5]
-```
-
-## With Objects
-
 Implement a `CustomArray` class that works like this:
 
 ```ruby
@@ -33,9 +20,4 @@ Implement a `CustomArray` class that works like this:
 ```
 
 But the `CustomArray` class **may not use the
-built-in `.flatten` method**.
-
-Your solution should make use of methods and classes. Be sure to write good
-tests. Do not use `.to_s`
-
-
+built-in `.flatten` method** or `.to_s`
