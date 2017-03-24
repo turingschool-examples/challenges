@@ -4,7 +4,6 @@ We want to generate serial numbers for each of our products as they roll off the
 
 The patterns follow these rules:
 
-* They are made up of at least 5 characters and max 20 characters
 * A `.` in a pattern represents a place that can be filled with a capital letter A-Z
 * A `#` in a pattern represents a place that can be filled with a number 0-9
 * Any letter or number in the pattern is a "literal" left in the output
