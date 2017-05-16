@@ -29,7 +29,7 @@ Ruby
 
 JavaScript
 ```javascript
-> let c = new customArray([[1,2],[3,[4,5]]])
+> let c = new CustomArray([[1,2],[3,[4,5]]])
 > c.flatten
 => [1, 2, 3, 4, 5]
 ```
