@@ -8,7 +8,7 @@ arrays into the outer array like this:
 => [1, 2, 3, 4, 5]
 ```
 
-JavaScript does not have a 'flatten' method. In ES6,  you could use deconstructing to do something similar.
+JavaScript does not have a 'flatten' method. In ES6,  you could deconstruct the array (...) and use `concat` to do something similar.
 
 ```js
 > [].concat.apply(...[[1,2],[3,[4,5]]])
