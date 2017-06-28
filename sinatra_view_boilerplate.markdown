@@ -38,16 +38,17 @@ Add an `error.erb` file inside of your views folder:
 
 ### Layout
 
+**NOTE**: If you have cloned down the Robot World starter repository, you already have a stylesheet and a layout built for you. You can use the below instructions if you're starting from scratch and want to add a stylesheet and layout to your project. 
+
 * Add a `public` folder within `app` (`app/public`): this folder will contain your CSS, JavaScripts, and images
-* Inside the public folder, add a `css` folder (`/app/public/css`)
-* Create a file `app/public/css/style.css` and add your CSS styles there. 
+* Create a file `app/public/style.css` and add your CSS styles there. 
 * Create a file `views/layout.erb`. This will automatically render around any other `.erb` file that you specify to render in your route block. This file will also contain the link to your CSS file. 
 
 ```erb
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/style.css">
   <title>My Sinatra Application</title>
 </head>
 <body>
