@@ -1,6 +1,6 @@
 # Count characters in a string
 
-Write a console application that outputs the results of the following analysis of the input string:
+Write a console application that outputs the results of the following analysis of an input text. First preference would be to read the text from a file (of your own specification).
 
 For each unique character that appears in the input string, report the number of occurrences of that character in the input.  Report each character on its own line, in descending order based on the number of occurrences.  Each line should be formatted as follows:
 
