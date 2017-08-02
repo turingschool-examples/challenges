@@ -1,7 +1,7 @@
 # Practice with Functional Programming (And a refresher on enumerators)
 
 ## What is this?
-The purpose of this repo is to practice functional programming by implementing your own versions of enumerators in the style of Mythical Creatures. 
+The purpose of this project is to practice functional programming by implementing your own versions of enumerators in the style of Mythical Creatures. 
 
 ## How do I use it?
 ### First, make sure you have Mocha and Chai installed on your system
