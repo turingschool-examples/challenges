@@ -10,7 +10,22 @@ the closing brace comes in the opposite order of the opening.
 
 Write a validator that can determine the well-formed-ness of an input string.
 
-Here's a sample interaction pattern:
+Here's are two sample interaction patterns:
+
+### In JavaScript
+
+```javascript
+validate_string("()")
+# => true
+validate_string("([{}[]])")
+# => true
+validate_string("()[")
+# => false
+validate_string("([)]")
+# => false
+```
+
+### In Ruby
 
 ```ruby
 v = StringValidator.new
@@ -24,7 +39,6 @@ v.validate("([)]")
 # => false
 ```
 
-Extension:
+## Extension
 
-* Could we provide the list of match-pairs dynamically? Adjust your program to
-  take an array of start/end match pairs as input. For example: `well_formed?("({})", [["(",")"],["{","}"]])`
+Could we provide the list of match-pairs dynamically? Adjust your program to take an array of start/end match pairs as input. For example: `well_formed?("({})", [["(",")"],["{","}"]])`
