@@ -46,7 +46,7 @@ Could we provide the list of valid match-pairs?
 Adjust your program to take an array of start/end match pairs as input. For example:
 
 ```javascript
-validate_string("()[]", [ ["(", ")"], ["{", "}"] ])
+validate_string("(()[])", [ ["(", ")"], ["[", "]"] ])
 // => true
 validate_string("()[]", [ ["(", ")"] ])
 // => false
