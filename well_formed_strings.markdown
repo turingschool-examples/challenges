@@ -41,4 +41,15 @@ v.validate("([)]")
 
 ## Extension
 
-Could we provide the list of match-pairs dynamically? Adjust your program to take an array of start/end match pairs as input. For example: `well_formed?("({})", [["(",")"],["{","}"]])`
+Could we provide the list of valid match-pairs?
+
+Adjust your program to take an array of start/end match pairs as input. For example:
+
+```javascript
+validate_string("()[]", [ ["(", ")"], ["{", "}"] ])
+// => true
+validate_string("()[]", [ ["(", ")"] ])
+// => false
+validate_string("!12@", [ ["1", "2"], ["!", "@"] ])
+// => true
+```
