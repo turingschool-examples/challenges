@@ -16,13 +16,13 @@ Here's are two sample interaction patterns:
 
 ```javascript
 validate_string("()")
-# => true
+// => true
 validate_string("([{}[]])")
-# => true
+// => true
 validate_string("()[")
-# => false
+// => false
 validate_string("([)]")
-# => false
+// => false
 ```
 
 ### In Ruby
