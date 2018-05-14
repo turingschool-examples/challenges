@@ -12,9 +12,11 @@ Write a program which can:
 
 ## Part 1: Verify Pattern Compliance
 
-Given a generated serial number, return true or false based on whether or not the input matches the pattern:
+Given a generated serial number, return true or false based on whether or not the input matches the pattern.
 
-```
+In Ruby:
+
+```ruby
 pg = PatternGenerator.new
 pattern = ".#."
 pg.verify("A3B", pattern)
@@ -23,11 +25,24 @@ pg.verify("AAB", pattern)
 # => false
 ```
 
+In JavaScript:
+
+```js
+pattern = ".#.";
+pattern_verify("A3B", pattern);
+# => true
+pattern_verify("AAB", pattern);
+# => false
+```
+
+
 ## Part 2: Generate The Nth Value In the Pattern
 
 Given a specific pattern, assuming that incrementing happens from right to left (like normal numbers), generate the Nth value in the sequence:
 
-```
+In Ruby:
+
+```ruby
 pg = PatternGenerator.new
 pattern = ".#."
 pg.generate(0, pattern)
@@ -36,13 +51,33 @@ pg.generate(27, pattern)
 # => "A1B"
 ```
 
+In JavaScript:
+
+```js
+pattern = ".#.";
+pattern_generate(0, pattern);
+# => "A0A"
+pattern_generate(27, pattern);
+# => "A1B"
+```
+
 ## Part 3: Possibilities
 
 Given a specific pattern, determine how many total numbers are in the set:
 
-```
+In Ruby:
+
+```ruby
 pg = PatternGenerator.new
 pattern = ".#."
 pg.total_available(pattern)
+# => 6760
+```
+
+In JavaScript:
+
+```js
+pattern = ".#."
+pattern_total_available(pattern)
 # => 6760
 ```
