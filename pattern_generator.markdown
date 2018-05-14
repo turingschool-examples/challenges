@@ -77,7 +77,7 @@ pg.total_available(pattern)
 In JavaScript:
 
 ```js
-pattern = ".#."
-pattern_total_available(pattern)
+pattern = ".#.";
+pattern_total_available(pattern);
 // => 6760
 ```
