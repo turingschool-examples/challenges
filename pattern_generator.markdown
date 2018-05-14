@@ -30,9 +30,9 @@ In JavaScript:
 ```js
 pattern = ".#.";
 pattern_verify("A3B", pattern);
-# => true
+// => true
 pattern_verify("AAB", pattern);
-# => false
+// => false
 ```
 
 
@@ -56,9 +56,9 @@ In JavaScript:
 ```js
 pattern = ".#.";
 pattern_generate(0, pattern);
-# => "A0A"
+// => "A0A"
 pattern_generate(27, pattern);
-# => "A1B"
+// => "A1B"
 ```
 
 ## Part 3: Possibilities
@@ -79,5 +79,5 @@ In JavaScript:
 ```js
 pattern = ".#."
 pattern_total_available(pattern)
-# => 6760
+// => 6760
 ```
