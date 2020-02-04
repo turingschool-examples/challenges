@@ -1,4 +1,4 @@
-# Test a String for Well-Formedness
+# Well-Formed Strings
 
 A string of characters like "({12}[34(56){67}])" is said to be well-formed
 if every opening brace (square, curly, or parens) has a matching close AND
