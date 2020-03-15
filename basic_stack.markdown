@@ -18,10 +18,10 @@ You can assume that this stack only holds integers.
 
 ## Limitations
 
-While you can use a Ruby `Array`, don't use the following built-in
+While you can use a Ruby or JavaScript `Array`, don't use the following built-in
 methods on Array:
 
-* `push` / `<<` / `unshift`
+* `push` / `unshift` (or shovel operator in Ruby)
 * `pop` / `shift`
 * `max` / `max_by` / `min` / `min_by`
 * `count` / `length`
@@ -32,4 +32,8 @@ negative array indexes?
 
 ## Solutions
 
-* [Video walk-through](https://vimeo.com/125297304)
+<details>
+  <summary>Video walk-through</summary>
+
+  https://vimeo.com/125297304
+</details>
