@@ -1,10 +1,10 @@
-# Wizarding Bank Challenge
+# Monopoly Bank Challenge
 
-## Gringott's Wizarding Bank 
+## Milburn Pennybags' Monopoly Bank 
 
-Gringott's has become too big to fail, so the Ministry of Magic has decided to break up this wizarding bank.
+Mr. Monopoly's bank has become too big to fail, so Hasbro has decided to break up this infamous bank.
 
-But they need, quite literally, a programming wizard to create the software to run these banks. 
+But they need a programming wiz to create the software to run these banks. 
 
 ## Specification
 
@@ -12,17 +12,17 @@ But they need, quite literally, a programming wizard to create the software to r
 
 Using classes, meet the following requirements:
 
-(Note: Assume the default unit of currency is the galleon.)
+(Note: Assume the default unit of currency is the USMD (United States Monopoly Dollar).)
 
 * Create a Person class to model a person. This person should have a name and a level of cash.
 ````
-person1 = Person.new("Minerva", 1000)
+person1 = Person.new("Jake", 1000)
 
-Minerva has been created with 1000 galleons in cash.
+Jake has been created with 1000 dollars in cash.
 
 person2 = Person.new("Luna", 500)
 
-Luna has been created with 500 galleons in cash.
+Luna has been created with 500 dollars in cash.
 ````
 
 * The person class should store a person's cash level, which banks they have an account with, and their balances at each bank.
@@ -43,7 +43,7 @@ Wells Fargo has been created.
 ````
 chase.open_account(person1)
 
-An account has been opened for Minerva with JP Morgan Chase.
+An account has been opened for Jake with JP Morgan Chase.
 
 ````
 * Banks should be able to accept deposits by passing in a person and deposit amount to the deposit method.
@@ -51,7 +51,7 @@ An account has been opened for Minerva with JP Morgan Chase.
 ````
 chase.deposit(person1, 750)
 
-750 galleons have been deposited into Minerva's Chase account. Balance: 750 Cash: 250 
+750 dollars have been deposited into Jake's Chase account. Balance: 750 Cash: 250 
 ````
 
 
@@ -60,7 +60,7 @@ chase.deposit(person1, 750)
 ````
 chase.deposit(person1, 5000)
 
-Minerva does not have enough cash to perform this deposit.
+Jake does not have enough cash to perform this deposit.
 
 ````
 
@@ -69,7 +69,7 @@ Minerva does not have enough cash to perform this deposit.
 ````
 chase.withdrawal(person1, 250)
 
-Minerva has withdrawn 250 galleons. Balance: 250
+Jake has withdrawn 250 dollars. Balance: 250
 ````
 * A person should not be able to withdraw more than they have in a bank. (No overdrafting.)
 
@@ -85,7 +85,7 @@ Insufficient funds.
 ````
 chase.transfer(person1, wells_fargo, 250)
 
-Minerva has transferred 250 galleons from JP Morgan Chase to Wells Fargo.
+Jake has transferred 250 dollars from JP Morgan Chase to Wells Fargo.
 ````
 
 * Again, a person should not be able to transfer more money than their balance.
@@ -109,12 +109,12 @@ Luna does not have an account with Wells Fargo.
 ````
 chase.total_cash
 
-Total Cash: 750 galleons
+Total Cash: 750 dollars
 ````
 
 ### Level 2
 
-In this new financial climate, there are now companies offering wizards and witches lines of credit.
+In this new financial climate, there are now companies offering Monopoly residents lines of credit, as these citizens are spending too much on avocado toast and don't have enough cash on hand to buy property!
 
 * There should be a Credit class, and each Credit should have a unique name. `amex = Credit.new("AMEX")`
 * When you open a line of credit, you pass it a person, a credit limit and an interest rate. `amex.open_credit(person1, 100, 0.05)`
@@ -126,5 +126,5 @@ In this new financial climate, there are now companies offering wizards and witc
 
 ### Extensions
 * Use TDD to complete this
-* Modify your program to handle the different denominations of currency. For your reference: there are 17 silver Sickles 
-to a gold Galleon, and 29 bronze Knuts to a Sickle.
+* Modify your program to handle the different denominations of currency. For your reference: there are 17 Monopoly nickels 
+to a US Monopoly Dollar, and 29 Monopoly pennies to a nickel
