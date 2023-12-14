@@ -1,12 +1,12 @@
 # Pattern Generator
 
-We want to generate serial numbers for each of our products as they roll off the manufacturing line. It's important that the patterns of the serial numbers are tightly defined.
+We want the ability to generate serial numbers for each of our products as they roll off the manufacturing line. It's important that the pattern of the serial numbers is tightly defined and numbers generated in a logical fashion.
 
-The patterns follow these rules:
+A pattern follows these rules:
 
-* A `.` in a pattern represents a place that can be filled with a capital letter A-Z
-* A `#` in a pattern represents a place that can be filled with a number 0-9
-* Any letter or number in the pattern is a "literal" left in the output
+* A `.` in a pattern represents a place that can be filled with a capital letter `A`-`Z`
+* A `#` in a pattern represents a place that can be filled with a digit `0`-`9`
+* A `@` in a pattern represents a place that can be filled with a digit or letter `0` up to `Z`
 
 Write a program which can:
 
@@ -18,20 +18,20 @@ In Ruby:
 
 ```ruby
 pg = PatternGenerator.new
-pattern = ".#."
-pg.verify("A3B", pattern)
+pattern = ".#.@"
+pg.verify("A3B1", pattern)
 # => true
-pg.verify("AAB", pattern)
+pg.verify("AABA", pattern)
 # => false
 ```
 
 In JavaScript:
 
 ```js
-pattern = ".#.";
-pattern_verify("A3B", pattern);
+pattern = ".#.@";
+pattern_verify("A3B1", pattern);
 // => true
-pattern_verify("AAB", pattern);
+pattern_verify("AABA", pattern);
 // => false
 ```
 
@@ -44,21 +44,21 @@ In Ruby:
 
 ```ruby
 pg = PatternGenerator.new
-pattern = ".#."
+pattern = "@.#."
 pg.generate(0, pattern)
-# => "A0A"
+# => "0A0A"
 pg.generate(27, pattern)
-# => "A1B"
+# => "0A1B"
 ```
 
 In JavaScript:
 
 ```js
-pattern = ".#.";
+pattern = "@.#.";
 pattern_generate(0, pattern);
-// => "A0A"
+// => "0A0A"
 pattern_generate(27, pattern);
-// => "A1B"
+// => "0A1B"
 ```
 
 ## Part 3: Possibilities
@@ -72,6 +72,9 @@ pg = PatternGenerator.new
 pattern = ".#."
 pg.total_available(pattern)
 # => 6760
+pattern = "@.#."
+pg.total_available(pattern)
+# => 243360
 ```
 
 In JavaScript:
@@ -80,4 +83,34 @@ In JavaScript:
 pattern = ".#.";
 pattern_total_available(pattern);
 // => 6760
+pattern = "@.#.";
+pattern_total_available(pattern);
+// => 243360
+```
+
+## Part 4: Deduction
+
+Given a sample of three serial numbers, output a pattern that could generate them. Prefer `.` and `#` over `@` if they fit the sample serial numbers.
+
+```ruby
+pg = PatternGenerator.new
+inputs = ["0A1B", "5C2Z", "9R9B"]
+pg.find_pattern_for(inputs)
+# => "#.#."
+
+inputs_2 = ["0A1B", "5C2Z", "AR9B"]
+pg.find_pattern_for(inputs_2)
+# => "@.#."
+```
+
+In JavaScript:
+
+```js
+inputs = ["0A1B", "5C2Z", "9R9B"];
+pattern_for_inputs(inputs);
+// => "#.#."
+
+inputs_2 = ["0A1B", "5C2Z", "AR9B"];
+pattern_for_inputs(inputs_2);
+// => "@.#."
 ```
