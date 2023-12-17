@@ -1,0 +1,61 @@
+GEM
+  remote: https://www.rubygems.org/
+  specs:
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
+    coderay (1.1.1)
+    debug_inspector (0.0.2)
+    diff-lcs (1.3)
+    docile (1.1.5)
+    interception (0.5)
+    json (2.0.3)
+    method_source (0.8.2)
+    minitest (5.10.1)
+    minitest-nyan-cat (0.0.1)
+      nyan-cat-formatter (= 0.11)
+    mrspec (0.3.2)
+      minitest (~> 5.0)
+      rspec-core (~> 3.5)
+      what_weve_got_here_is_an_error_to_communicate (~> 0.0.8)
+    nyan-cat-formatter (0.11)
+      rspec (>= 2.99, >= 2.14.2, < 4)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    rouge (1.11.1)
+    rspec (3.5.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+    rspec-core (3.5.4)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-mocks (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-support (3.5.0)
+    simplecov (0.13.0)
+      docile (~> 1.1.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
+    slop (3.6.0)
+    what_weve_got_here_is_an_error_to_communicate (0.0.8)
+      binding_of_caller (~> 0.7.2)
+      interception (~> 0.5)
+      rouge (~> 1.8, != 1.9.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  minitest-nyan-cat
+  mrspec
+  pry
+  simplecov
+
+BUNDLED WITH
+   1.14.3
